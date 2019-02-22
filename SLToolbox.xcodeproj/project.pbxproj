@@ -15,6 +15,10 @@
 		37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAB222042E3006F811B /* UIColor+RGB.swift */; };
 		37EE9FAE2220437A006F811B /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAD2220437A006F811B /* UIColorTests.swift */; };
 		37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAF22204719006F811B /* UIColor+Adjust.swift */; };
+		37EE9FB32220492C006F811B /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB22220492C006F811B /* Date+Components.swift */; };
+		37EE9FB522204C51006F811B /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB422204C51006F811B /* DateTests.swift */; };
+		37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB6222051C7006F811B /* Date+ISOString.swift */; };
+		37EE9FBA22205595006F811B /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB922205595006F811B /* String+Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,10 @@
 		37EE9FAB222042E3006F811B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
 		37EE9FAD2220437A006F811B /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		37EE9FAF22204719006F811B /* UIColor+Adjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Adjust.swift"; sourceTree = "<group>"; };
+		37EE9FB22220492C006F811B /* Date+Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Components.swift"; sourceTree = "<group>"; };
+		37EE9FB422204C51006F811B /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		37EE9FB6222051C7006F811B /* Date+ISOString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ISOString.swift"; sourceTree = "<group>"; };
+		37EE9FB922205595006F811B /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,8 @@
 		37EE9FA32220363D006F811B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FB822205587006F811B /* String */,
+				37EE9FB122204918006F811B /* Date */,
 				37EE9FA52220378B006F811B /* Comparable */,
 				37EE9FA42220364C006F811B /* UIColor */,
 			);
@@ -145,8 +155,26 @@
 			children = (
 				37EE9FA9222038DE006F811B /* ComparableTests.swift */,
 				37EE9FAD2220437A006F811B /* UIColorTests.swift */,
+				37EE9FB422204C51006F811B /* DateTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37EE9FB122204918006F811B /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FB22220492C006F811B /* Date+Components.swift */,
+				37EE9FB6222051C7006F811B /* Date+ISOString.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		37EE9FB822205587006F811B /* String */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FB922205595006F811B /* String+Date.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +289,9 @@
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
+				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
+				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
+				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +302,7 @@
 				370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */,
 				37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */,
 				37EE9FAE2220437A006F811B /* UIColorTests.swift in Sources */,
+				37EE9FB522204C51006F811B /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
