@@ -15,6 +15,9 @@ public extension Comparable {
      - parameter limits: Range value describing upper and lower bounds to which value should be clamped.
 
      - returns: object of the same type clamped inside limits.
+
+     - Author:
+     SLToolbox - Łukasz Szarkowicz
      */
     public func clamped(to limits: ClosedRange<Self>) -> Self {
         return min(max(self, limits.lowerBound), limits.upperBound)
