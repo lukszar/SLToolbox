@@ -12,6 +12,9 @@
 		370DE68922203231006158C3 /* SLToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 370DE67B22203231006158C3 /* SLToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
 		37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA9222038DE006F811B /* ComparableTests.swift */; };
+		37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAB222042E3006F811B /* UIColor+RGB.swift */; };
+		37EE9FAE2220437A006F811B /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAD2220437A006F811B /* UIColorTests.swift */; };
+		37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAF22204719006F811B /* UIColor+Adjust.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		370DE68822203231006158C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		37EE9FA9222038DE006F811B /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
+		37EE9FAB222042E3006F811B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		37EE9FAD2220437A006F811B /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		37EE9FAF22204719006F811B /* UIColor+Adjust.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Adjust.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,8 @@
 		37EE9FA42220364C006F811B /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FAB222042E3006F811B /* UIColor+RGB.swift */,
+				37EE9FAF22204719006F811B /* UIColor+Adjust.swift */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				37EE9FA9222038DE006F811B /* ComparableTests.swift */,
+				37EE9FAD2220437A006F811B /* UIColorTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
+				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
+				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +270,7 @@
 			files = (
 				370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */,
 				37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */,
+				37EE9FAE2220437A006F811B /* UIColorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
