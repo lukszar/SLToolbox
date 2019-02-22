@@ -18,6 +18,7 @@ Docs/API
 *.pbxuser
 *.perspectivev3
 *.xcuserdatad
+xcuserdata/
 
 !default.pbxuser
 !default.mode1v3

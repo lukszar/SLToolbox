@@ -10,6 +10,8 @@
 		370DE68222203231006158C3 /* SLToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370DE67822203231006158C3 /* SLToolbox.framework */; };
 		370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DE68622203231006158C3 /* SLToolboxTests.swift */; };
 		370DE68922203231006158C3 /* SLToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 370DE67B22203231006158C3 /* SLToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
+		37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA9222038DE006F811B /* ComparableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		370DE68122203231006158C3 /* SLToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370DE68622203231006158C3 /* SLToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLToolboxTests.swift; sourceTree = "<group>"; };
 		370DE68822203231006158C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
+		37EE9FA9222038DE006F811B /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FA32220363D006F811B /* Extensions */,
 				370DE67B22203231006158C3 /* SLToolbox.h */,
 			);
 			path = Sources;
@@ -88,6 +93,7 @@
 		37EE9FA02220340C006F811B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FA8222038B0006F811B /* Extensions */,
 				370DE68622203231006158C3 /* SLToolboxTests.swift */,
 				370DE68822203231006158C3 /* Info.plist */,
 			);
@@ -100,6 +106,38 @@
 				370DE67C22203231006158C3 /* Info.plist */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		37EE9FA32220363D006F811B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FA52220378B006F811B /* Comparable */,
+				37EE9FA42220364C006F811B /* UIColor */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37EE9FA42220364C006F811B /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		37EE9FA52220378B006F811B /* Comparable */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */,
+			);
+			path = Comparable;
+			sourceTree = "<group>";
+		};
+		37EE9FA8222038B0006F811B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FA9222038DE006F811B /* ComparableTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +202,7 @@
 				TargetAttributes = {
 					370DE67722203231006158C3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					370DE68022203231006158C3 = {
 						CreatedOnToolsVersion = 10.1;
@@ -210,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */,
+				37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +398,7 @@
 		370DE68D22203231006158C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.szarkowicz.SLToolbox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +425,7 @@
 		370DE68E22203231006158C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -407,6 +451,7 @@
 		370DE69022203231006158C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -425,6 +470,7 @@
 		370DE69122203231006158C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = Tests/Info.plist;
