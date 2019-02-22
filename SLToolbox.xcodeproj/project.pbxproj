@@ -19,6 +19,7 @@
 		37EE9FB522204C51006F811B /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB422204C51006F811B /* DateTests.swift */; };
 		37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB6222051C7006F811B /* Date+ISOString.swift */; };
 		37EE9FBA22205595006F811B /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB922205595006F811B /* String+Date.swift */; };
+		37EE9FBD22205A53006F811B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FBC22205A53006F811B /* Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		37EE9FB422204C51006F811B /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		37EE9FB6222051C7006F811B /* Date+ISOString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ISOString.swift"; sourceTree = "<group>"; };
 		37EE9FB922205595006F811B /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		37EE9FBC22205A53006F811B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		37EE9FA32220363D006F811B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FBB22205A41006F811B /* CALayer */,
 				37EE9FB822205587006F811B /* String */,
 				37EE9FB122204918006F811B /* Date */,
 				37EE9FA52220378B006F811B /* Comparable */,
@@ -175,6 +178,14 @@
 				37EE9FB922205595006F811B /* String+Date.swift */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		37EE9FBB22205A41006F811B /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FBC22205A53006F811B /* Gradient.swift */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
+				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
