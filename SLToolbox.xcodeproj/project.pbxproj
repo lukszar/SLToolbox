@@ -21,6 +21,8 @@
 		37EE9FBA22205595006F811B /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FB922205595006F811B /* String+Date.swift */; };
 		37EE9FBD22205A53006F811B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FBC22205A53006F811B /* Gradient.swift */; };
 		37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FBF22205D62006F811B /* UILabel+Truncated.swift */; };
+		37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FC222205E80006F811B /* UIImage+Tinted.swift */; };
+		37EE9FC6222060FC006F811B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FC5222060FC006F811B /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		37EE9FB922205595006F811B /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		37EE9FBC22205A53006F811B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		37EE9FBF22205D62006F811B /* UILabel+Truncated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Truncated.swift"; sourceTree = "<group>"; };
+		37EE9FC222205E80006F811B /* UIImage+Tinted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Tinted.swift"; sourceTree = "<group>"; };
+		37EE9FC5222060FC006F811B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FC4222060EA006F811B /* Utils */,
 				37EE9FA32220363D006F811B /* Extensions */,
 				370DE67B22203231006158C3 /* SLToolbox.h */,
 			);
@@ -129,6 +134,7 @@
 		37EE9FA32220363D006F811B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				37EE9FC122205E41006F811B /* UIImage */,
 				37EE9FBE22205CB9006F811B /* UILabel */,
 				37EE9FBB22205A41006F811B /* CALayer */,
 				37EE9FB822205587006F811B /* String */,
@@ -197,6 +203,22 @@
 				37EE9FBF22205D62006F811B /* UILabel+Truncated.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		37EE9FC122205E41006F811B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FC222205E80006F811B /* UIImage+Tinted.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		37EE9FC4222060EA006F811B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				37EE9FC5222060FC006F811B /* Logger.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +335,8 @@
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
+				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
+				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
