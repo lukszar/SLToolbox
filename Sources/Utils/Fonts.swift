@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Fonts {
+public struct Fonts {
 
     /**
      List all available fonts in application.
