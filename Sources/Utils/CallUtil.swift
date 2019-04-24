@@ -15,7 +15,7 @@ import Foundation
 
  - Author: SLToolbox - Łukasz Szarkowicz
 */
-public class CallUtil {
+final public class CallUtil {
 
     /// Phone number
     private(set) var number: String
@@ -23,14 +23,14 @@ public class CallUtil {
     /**
      URL created for the phone number.
      */
-    var callUrl: URL? {
+    public var callUrl: URL? {
         return URL(string: "tel://\(self.number)")
     }
 
     /**
      Check if it is possible to make a phone call with given phone number.
      */
-    var canCall: Bool {
+    public var canCall: Bool {
         guard let url = callUrl else {
             return false
         }
@@ -38,7 +38,7 @@ public class CallUtil {
         return UIApplication.shared.canOpenURL(url)
     }
 
-    init(number: String) {
+    public init(number: String) {
         self.number = number
     }
 
@@ -51,7 +51,7 @@ public class CallUtil {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    func call(_ failureHandler:(() -> Void)? = nil) {
+    public func call(_ failureHandler:(() -> Void)? = nil) {
         guard let url = callUrl, canCall == true else {
             failureHandler?()
             presentFailWarning()

@@ -15,7 +15,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var second: Int {
+    var second: Int {
         return Calendar.current.component(.second, from: self)
     }
 
@@ -24,7 +24,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var minute: Int {
+    var minute: Int {
         return Calendar.current.component(.minute, from: self)
     }
 
@@ -33,7 +33,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var hour: Int {
+    var hour: Int {
         return Calendar.current.component(.hour, from: self)
     }
 
@@ -42,7 +42,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var day: Int {
+    var day: Int {
         return Calendar.current.component(.day, from: self)
     }
 
@@ -51,7 +51,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var month: Int {
+    var month: Int {
         return Calendar.current.component(.month, from: self)
     }
 
@@ -60,7 +60,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var year: Int {
+    var year: Int {
         return Calendar.current.component(.year, from: self)
     }
 }

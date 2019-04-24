@@ -41,19 +41,19 @@ fileprivate class Logger {
     }
 }
 
-func logError(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
+public func logError(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
     #if DEBUG
     Logger.print(function: function, file: file, line: line, message: message, level: .error)
     #endif
 }
 
-func logWarning(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
+public func logWarning(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
     #if DEBUG
     Logger.print(function: function, file: file, line: line, message: message, level: .warning)
     #endif
 }
 
-func logSuccess(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
+public func logSuccess(_ function: String = #function, file: String = #file, line: Int = #line, message: String? = nil) {
     #if DEBUG
     Logger.print(function: function, file: file, line: line, message: message, level: .success)
     #endif

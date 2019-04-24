@@ -19,7 +19,7 @@ public extension Comparable {
      - Author:
      SLToolbox - Łukasz Szarkowicz
      */
-    public func clamped(to limits: ClosedRange<Self>) -> Self {
+    func clamped(to limits: ClosedRange<Self>) -> Self {
         return min(max(self, limits.lowerBound), limits.upperBound)
     }
 }

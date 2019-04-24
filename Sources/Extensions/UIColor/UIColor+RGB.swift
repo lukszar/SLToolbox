@@ -26,7 +26,7 @@ public extension UIColor {
      - Author:
      SLToolbox - Łukasz Szarkowicz
      */
-    public convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1.0) {
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1.0) {
         let redColor = CGFloat(red.clamped(to: 0...255)) / 255.0
         let greenColor = CGFloat(green.clamped(to: 0...255)) / 255.0
         let blueColor = CGFloat(blue.clamped(to: 0...255)) / 255.0

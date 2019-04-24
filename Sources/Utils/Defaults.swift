@@ -12,7 +12,7 @@ public class Defaults {
 
     static let shared = Defaults()
 
-    let suiteName: String?
+    public let suiteName: String?
     let userDefaults: UserDefaults
 
     init(suiteName: String? = Bundle.main.bundleIdentifier) {
@@ -20,9 +20,9 @@ public class Defaults {
         self.userDefaults = UserDefaults(suiteName: suiteName) ?? UserDefaults.standard
     }
 
-    class Value<T: Any> {
+    public class Value<T: Any> {
         private var key: String
-        var value: T? {
+        public var value: T? {
             get {
                 return Defaults.shared.userDefaults.object(forKey: key) as? T
             }
@@ -32,7 +32,7 @@ public class Defaults {
             }
         }
 
-        init(forKey key: String, defaultValue: T? = nil) {
+        public init(forKey key: String, defaultValue: T? = nil) {
             self.key = key
             if defaultValue != nil, self.value == nil {
                 self.value = defaultValue

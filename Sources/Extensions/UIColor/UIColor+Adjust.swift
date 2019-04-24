@@ -20,7 +20,7 @@ public extension UIColor {
      - Author:
      SLToolbox - Łukasz Szarkowicz
      */
-    public func lighter(by percentage: CGFloat = 30.0) -> UIColor {
+    func lighter(by percentage: CGFloat = 30.0) -> UIColor {
         return self.adjustBrightness(by: abs(percentage))
     }
 
@@ -34,7 +34,7 @@ public extension UIColor {
      - Author:
      SLToolbox - Łukasz Szarkowicz
      */
-    public func darker(by percentage: CGFloat = 30.0) -> UIColor {
+    func darker(by percentage: CGFloat = 30.0) -> UIColor {
         return self.adjustBrightness(by: -abs(percentage))
     }
 

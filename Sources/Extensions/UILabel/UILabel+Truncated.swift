@@ -17,7 +17,7 @@ public extension UILabel {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public var isTruncated: Bool {
+    var isTruncated: Bool {
         guard let labelText = text else {
             return false
         }
@@ -27,7 +27,7 @@ public extension UILabel {
         let labelTextSize = (labelText as NSString).boundingRect(
             with: maxSize,
             options: .usesLineFragmentOrigin,
-            attributes: [.font: font],
+            attributes: [.font: self.font as Any],
             context: nil).size
 
         return labelTextSize.height > bounds.size.height

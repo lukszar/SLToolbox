@@ -17,7 +17,7 @@ public struct Fonts {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    static func printList() {
+    public static func printList() {
 
         UIFont.familyNames.forEach { familyName in
             debugPrint("\n🔤 Font family: " + familyName)

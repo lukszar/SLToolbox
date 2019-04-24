@@ -19,7 +19,7 @@ public extension CALayer {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public enum Direction {
+    enum Direction {
         case vertical
         case horizontal
         case custom(start: CGPoint, end: CGPoint)
@@ -60,7 +60,7 @@ public extension CALayer {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public func applyGradient(withColors colors: [UIColor], andLocations locations: [NSNumber]? = nil, direction: Direction = .vertical ) {
+    func applyGradient(withColors colors: [UIColor], andLocations locations: [NSNumber]? = nil, direction: Direction = .vertical ) {
 
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
@@ -82,7 +82,7 @@ public extension CALayer {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public func layoutGradient() {
+    func layoutGradient() {
         if let sl = sublayers, sl.count > 0, sl[0] is CAGradientLayer {
             let gradient = sl[0]
             gradient.frame = self.bounds

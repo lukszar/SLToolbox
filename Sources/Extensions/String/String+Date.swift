@@ -17,7 +17,7 @@ public extension String {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public func date() -> Date? {
+    func date() -> Date? {
         return Date.date(from: self)
     }
 }

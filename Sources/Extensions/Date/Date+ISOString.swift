@@ -19,7 +19,7 @@ public extension Date {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    public static func date(from isoString: String) -> Date? {
+    static func date(from isoString: String) -> Date? {
 
         let dateFormatter = DateFormatter()
 //        dateFormatter.locale = Locale(identifier: "en_US_POSIX")

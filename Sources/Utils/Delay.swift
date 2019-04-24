@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Delay {
+public class Delay {
 
     /**
      Execute block of code with delay.
@@ -19,7 +19,7 @@ class Delay {
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    class func after(_ delay: Double, completion:@escaping () -> Void) {
+    public class func after(_ delay: Double, completion:@escaping () -> Void) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC),
             execute: completion)
