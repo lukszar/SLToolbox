@@ -11,10 +11,16 @@ import SLToolbox
 
 class ViewController: UIViewController {
 
+    @IBAction func pushButtonAction(_ sender: Any) {
+        let newVC = SecondViewController.instantiate()
+        present(newVC, animated: true, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        
+        print("current firstKey: \n\(Defaults.firstKey)")
 
         // Do any additional setup after loading the view.
     }
@@ -22,3 +28,14 @@ class ViewController: UIViewController {
 
 }
 
+extension Defaults {
+
+    static let firstKey = Value<String>(forKey: "myFirstKey", defaultValue: "super value")
+}
+
+extension StoryboardLoadable where Self: UIViewController {
+
+    static var storyboardName: String {
+        return String(describing: self).replacingOccurrences(of: "ViewController", with: "")
+    }
+}

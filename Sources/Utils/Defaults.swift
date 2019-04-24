@@ -10,26 +10,18 @@ import Foundation
 
 public class Defaults {
 
-    static let shared = Defaults()
+    public static let shared = Defaults()
 
-    public let suiteName: String?
-    let userDefaults: UserDefaults
-
-    init(suiteName: String? = Bundle.main.bundleIdentifier) {
-        self.suiteName = suiteName
-        self.userDefaults = UserDefaults(suiteName: suiteName) ?? UserDefaults.standard
+    public var suiteName: String? = Bundle.main.bundleIdentifier
+    var userDefaults: UserDefaults {
+        return UserDefaults(suiteName: suiteName) ?? UserDefaults.standard
     }
 
-    public class Value<T: Any> {
+    public class Value<T: Any>: CustomDebugStringConvertible, CustomStringConvertible {
         private var key: String
         public var value: T? {
-            get {
-                return Defaults.shared.userDefaults.object(forKey: key) as? T
-            }
-
-            set {
-                Defaults.shared.userDefaults.set(newValue, forKey: key)
-            }
+            get { return Defaults.shared.userDefaults.object(forKey: key) as? T }
+            set { Defaults.shared.userDefaults.set(newValue, forKey: key) }
         }
 
         public init(forKey key: String, defaultValue: T? = nil) {
@@ -37,6 +29,18 @@ public class Defaults {
             if defaultValue != nil, self.value == nil {
                 self.value = defaultValue
             }
+        }
+
+        public var debugDescription: String {
+            let msg: String = "User defaults (suite named: \(String(describing: Defaults.shared.userDefaults))"
+                + "\n   key: \(self.key)"
+                + "\n   value: \(String(describing: self.value))"
+
+            return msg
+        }
+
+        public var description: String {
+            return debugDescription
         }
     }
 }
