@@ -18,6 +18,8 @@ public extension UITableView {
      - parameter cell: class type to register - subclass of `UITableViewCell` conforming `NibReusable` protocol
 
      - seealso: `func register(_ nib: UINib?, forCellReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UITableViewCell>(_ cell: T.Type) where T: NibReusable {
         
@@ -30,6 +32,8 @@ public extension UITableView {
      - parameter cell: class type to register - subclass of `UITableViewCell` conforming `ClassReusable` protocol
 
      - seealso: `func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UITableViewCell>(_ cell: T.Type) where T: ClassReusable {
         register(cell.self, forCellReuseIdentifier: cell.reuseIdentifier)
@@ -47,6 +51,8 @@ public extension UITableView {
      - requires: cell class has to be registered before dequeue
 
      - seealso: `func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UITableViewCell`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func dequeueReusableCell<T: UITableViewCell>
         (for indexPath: IndexPath,
@@ -76,6 +82,8 @@ public extension UITableView {
      - parameter headerFooter: class type to register - subclass of `UITableViewHeaderFooterView` conforming `NibReusable` protocol
 
      - seealso: `func register(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UITableViewHeaderFooterView>(_ headerFooter: T.Type) where T: NibReusable {
         register(headerFooter.nib, forHeaderFooterViewReuseIdentifier: headerFooter.reuseIdentifier)
@@ -87,6 +95,8 @@ public extension UITableView {
      - parameter headerFooter: class type to register - subclass of `UITableViewHeaderFooterView` conforming `ClassReusable` protocol
 
      - seealso: `func register(_ aClass: AnyClass?, forHeaderFooterViewReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UITableViewHeaderFooterView>(_ headerFooter: T.Type) where T: ClassReusable {
         register(headerFooter.self, forHeaderFooterViewReuseIdentifier: headerFooter.reuseIdentifier)
@@ -103,6 +113,8 @@ public extension UITableView {
      - requires: view class has to be registered before dequeue
 
      - seealso: `func dequeueReusableHeaderFooterView(withIdentifier identifier: String) -> UITableViewHeaderFooterView?`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>
         (for view: T.Type = T.self,

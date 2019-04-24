@@ -15,6 +15,7 @@
 		37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */; };
 		37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485864227050AC00302C34 /* StoryboardLoadable.swift */; };
 		374858672270577E00302C34 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858662270577E00302C34 /* Fonts.swift */; };
+		374858692270666100302C34 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858682270666100302C34 /* Delay.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -54,6 +55,7 @@
 		37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		37485864227050AC00302C34 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 		374858662270577E00302C34 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		374858682270666100302C34 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				37EE9FC5222060FC006F811B /* Logger.swift */,
 				374858662270577E00302C34 /* Fonts.swift */,
+				374858682270666100302C34 /* Delay.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */,
+				374858692270666100302C34 /* Delay.swift in Sources */,
 				3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */,
 				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
 			);

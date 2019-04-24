@@ -18,6 +18,8 @@ public extension UICollectionView {
      - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `NibReusable` protocol
 
      - seealso: `func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: NibReusable {
 
@@ -30,6 +32,8 @@ public extension UICollectionView {
      - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `ClassReusable` protocol
 
      - seealso: `func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: ClassReusable {
         register(cell.self, forCellWithReuseIdentifier: cell.reuseIdentifier)
@@ -47,6 +51,8 @@ public extension UICollectionView {
      - requires: cell class has to be registered before dequeue
 
      - seealso: `func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func dequeueReusableCell<T: UICollectionViewCell>
         (for indexPath: IndexPath,
@@ -76,6 +82,8 @@ public extension UICollectionView {
      - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `NibReusable` protocol
 
      - seealso: `func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: NibReusable {
         register(supplementaryView.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
@@ -87,6 +95,8 @@ public extension UICollectionView {
      - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `ClassReusable` protocol
 
      - seealso: `func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String)`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: ClassReusable {
         register(supplementaryView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
@@ -103,6 +113,8 @@ public extension UICollectionView {
      - requires: view class has to be registered before dequeue
 
      - seealso: `func dequeueReusableHeaderFooterView(withIdentifier identifier: String) -> UITableViewHeaderFooterView?`
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func dequeueReusableSupplementaryView<T: UICollectionReusableView>
         (for indexPath: IndexPath,

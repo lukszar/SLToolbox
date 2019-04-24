@@ -14,6 +14,8 @@ public struct Fonts {
      List all available fonts in application.
 
      List is printed in console using _debugPrint()_ function.
+
+     - Author: SLToolbox - Łukasz Szarkowicz
      */
     static func printList() {
 
