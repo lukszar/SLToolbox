@@ -18,6 +18,7 @@
 		374858692270666100302C34 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858682270666100302C34 /* Delay.swift */; };
 		3748586B2270698D00302C34 /* CallUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748586A2270698D00302C34 /* CallUtil.swift */; };
 		3748586D227072E500302C34 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748586C227072E500302C34 /* UIImage+Resize.swift */; };
+		3748586F2270752800302C34 /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748586E2270752800302C34 /* String+URL.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -60,6 +61,7 @@
 		374858682270666100302C34 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		3748586A2270698D00302C34 /* CallUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallUtil.swift; sourceTree = "<group>"; };
 		3748586C227072E500302C34 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		3748586E2270752800302C34 /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				37EE9FB922205595006F811B /* String+Date.swift */,
+				3748586E2270752800302C34 /* String+URL.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
 				37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
+				3748586F2270752800302C34 /* String+URL.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
 				37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
