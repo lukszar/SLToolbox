@@ -14,6 +14,7 @@
 		37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */; };
 		37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */; };
 		37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485864227050AC00302C34 /* StoryboardLoadable.swift */; };
+		374858672270577E00302C34 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858662270577E00302C34 /* Fonts.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -52,6 +53,7 @@
 		37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		37485864227050AC00302C34 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		374858662270577E00302C34 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				37EE9FC5222060FC006F811B /* Logger.swift */,
+				374858662270577E00302C34 /* Fonts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
 				37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
+				374858672270577E00302C34 /* Fonts.swift in Sources */,
 				37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
