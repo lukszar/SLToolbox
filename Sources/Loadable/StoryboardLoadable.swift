@@ -8,6 +8,13 @@
 
 import UIKit
 
+/**
+ Instantiate UIViewControllers designed in Storyboard.
+
+ Provide `storyboardIdentifier` in case of the View Controller is not root view controller in Storyboard and you want to instantiate View Controller using `storyboard identifier`.
+
+ - requires: Storyboard Identifier has to be set in Storyboard in case of using instantiate with identifier.
+ */
 public protocol StoryboardLoadable {
     static var storyboardName: String { get }
     static var storyboardIdentifier: String? { get }
