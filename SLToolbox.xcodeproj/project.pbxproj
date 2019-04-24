@@ -10,6 +10,12 @@
 		370DE68222203231006158C3 /* SLToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370DE67822203231006158C3 /* SLToolbox.framework */; };
 		370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DE68622203231006158C3 /* SLToolboxTests.swift */; };
 		370DE68922203231006158C3 /* SLToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 370DE67B22203231006158C3 /* SLToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748585E226F3A9100302C34 /* NibLoadable.swift */; };
+		37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */; };
+		37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */; };
+		37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485864227050AC00302C34 /* StoryboardLoadable.swift */; };
+		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
+		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
 		37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA9222038DE006F811B /* ComparableTests.swift */; };
 		37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAB222042E3006F811B /* UIColor+RGB.swift */; };
@@ -42,6 +48,12 @@
 		370DE68122203231006158C3 /* SLToolboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLToolboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370DE68622203231006158C3 /* SLToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLToolboxTests.swift; sourceTree = "<group>"; };
 		370DE68822203231006158C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3748585E226F3A9100302C34 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		37485864227050AC00302C34 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		37EE9FA9222038DE006F811B /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		37EE9FAB222042E3006F811B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
@@ -95,9 +107,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		37C5FC85226A0463006EF0D7 /* Loadable */ = {
+			isa = PBXGroup;
+			children = (
+				37C5FC86226A08C1006EF0D7 /* Reusable.swift */,
+				37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */,
+				37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */,
+				3748585E226F3A9100302C34 /* NibLoadable.swift */,
+				37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */,
+				37485864227050AC00302C34 /* StoryboardLoadable.swift */,
+			);
+			path = Loadable;
+			sourceTree = "<group>";
+		};
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37C5FC85226A0463006EF0D7 /* Loadable */,
 				37EE9FC4222060EA006F811B /* Utils */,
 				37EE9FA32220363D006F811B /* Extensions */,
 				370DE67B22203231006158C3 /* SLToolbox.h */,
@@ -330,15 +356,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */,
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
+				37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
+				37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
+				37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
+				37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */,
+				3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */,
 				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
