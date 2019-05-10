@@ -22,8 +22,25 @@ public protocol StoryboardLoadable {
 
 public extension StoryboardLoadable where Self: UIViewController {
 
+    /**
+     It is name of storyboard where is designed View Controller.
+
+     Default implementation of `storyboardName` returns name based on view controller's name, by trimming it's name from `ViewController` part.
+
+     F. ex. `MyScreenViewController` will return `MyScreen` as `storyboardName`
+
+     - Note: You can implement your own implementation of `storyboardName` in your project based on pattern used in project. It can be done with overriding `var storyboardName` implementation. Look on example below.
+
+     ```
+     extension StoryboardLoadable where Self: UIViewController {
+         static var storyboardName: String {
+            return String(describing: self).replacingOccurrences(of: "ViewController", with: "VC")
+         }
+     }
+     ```
+     */
     static var storyboardName: String {
-        return String(describing: self)
+        return String(describing: self).replacingOccurrences(of: "ViewController", with: "")
     }
 
     static func instantiate() -> Self {
