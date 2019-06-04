@@ -6,7 +6,7 @@
 //  Copyright © 2019 Łukasz Szarkowicz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol ClassReusable: Reusable {}
 public protocol NibReusable: Reusable, NibLoadable {}
