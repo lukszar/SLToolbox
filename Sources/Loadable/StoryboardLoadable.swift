@@ -43,6 +43,10 @@ public extension StoryboardLoadable where Self: UIViewController {
         return String(describing: self).replacingOccurrences(of: "ViewController", with: "")
     }
 
+    static var storyboardIdentifier: String? {
+        return nil
+    }
+
     static func instantiate() -> Self {
 
         let bundle = Bundle(for: self)
