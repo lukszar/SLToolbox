@@ -34,6 +34,7 @@
 		376F670922A6AB8600C8B671 /* BookCell+ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670422A6AB8600C8B671 /* BookCell+ConfigurableCell.swift */; };
 		376F670A22A6AB8600C8B671 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F670522A6AB8600C8B671 /* BookCell.xib */; };
 		376F670E22A6B32B00C8B671 /* BooksAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670D22A6B32B00C8B671 /* BooksAdapter.swift */; };
+		376F671322A8104E00C8B671 /* BooksSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F671222A8104E00C8B671 /* BooksSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		376F670422A6AB8600C8B671 /* BookCell+ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookCell+ConfigurableCell.swift"; sourceTree = "<group>"; };
 		376F670522A6AB8600C8B671 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		376F670D22A6B32B00C8B671 /* BooksAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksAdapter.swift; sourceTree = "<group>"; };
+		376F671222A8104E00C8B671 /* BooksSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +298,7 @@
 				376F66FB22A6980500C8B671 /* Book.swift */,
 				376F670D22A6B32B00C8B671 /* BooksAdapter.swift */,
 				376F66FF22A6AADC00C8B671 /* BooksTableViewModel.swift */,
+				376F671222A8104E00C8B671 /* BooksSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				376F66EF22A694C200C8B671 /* BooksWorker.swift in Sources */,
 				376F66F222A694C200C8B671 /* BooksInteractor.swift in Sources */,
 				376F66EE22A694C200C8B671 /* BooksPresenter.swift in Sources */,
+				376F671322A8104E00C8B671 /* BooksSection.swift in Sources */,
 				376F670E22A6B32B00C8B671 /* BooksAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
