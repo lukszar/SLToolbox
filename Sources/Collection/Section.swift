@@ -25,4 +25,8 @@ public class Section {
     func append(contentsOf array: [Element]) {
         self.rows.append(contentsOf: array)
     }
+
+    func append(_ element: Element) {
+        self.rows.append(element)
+    }
 }

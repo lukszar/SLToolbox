@@ -12,5 +12,4 @@ public protocol TableViewModelDelegate: class {
 
     var tableView: UITableView! { get }
     func didSelectRow(at indexPath: IndexPath)
-    
 }

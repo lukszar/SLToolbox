@@ -114,7 +114,7 @@
 		376F66EC22A694C200C8B671 /* BooksConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksConfigurator.swift; sourceTree = "<group>"; };
 		376F66FB22A6980500C8B671 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		376F66FD22A699AF00C8B671 /* Books.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
-		376F66FF22A6AADC00C8B671 /* BooksTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewModel.swift; sourceTree = "<group>"; };
+		376F66FF22A6AADC00C8B671 /* BooksTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BooksTableViewModel.swift; path = ../Presenter/BooksTableViewModel.swift; sourceTree = "<group>"; };
 		376F670122A6AB8600C8B671 /* BookCell+Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookCell+Interface.swift"; sourceTree = "<group>"; };
 		376F670222A6AB8600C8B671 /* BookCell+HeightProvided.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookCell+HeightProvided.swift"; sourceTree = "<group>"; };
 		376F670322A6AB8600C8B671 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
@@ -239,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				376F66E722A694C200C8B671 /* BooksPresenter.swift */,
-				376F66FF22A6AADC00C8B671 /* BooksTableViewModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -296,6 +295,7 @@
 				376F66E622A694C200C8B671 /* BooksActions.swift */,
 				376F66FB22A6980500C8B671 /* Book.swift */,
 				376F670D22A6B32B00C8B671 /* BooksAdapter.swift */,
+				376F66FF22A6AADC00C8B671 /* BooksTableViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
