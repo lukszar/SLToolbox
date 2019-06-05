@@ -14,8 +14,6 @@
 		3748588C2270910F00302C34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3748588A2270910F00302C34 /* LaunchScreen.storyboard */; };
 		374858972270910F00302C34 /* SLToolboxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858962270910F00302C34 /* SLToolboxDemoTests.swift */; };
 		374858A22270910F00302C34 /* SLToolboxDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858A12270910F00302C34 /* SLToolboxDemoUITests.swift */; };
-		374858BC2270927D00302C34 /* SLToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374858B92270924E00302C34 /* SLToolbox.framework */; };
-		374858BD2270927D00302C34 /* SLToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 374858B92270924E00302C34 /* SLToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		374858C52270A20500302C34 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858C42270A20500302C34 /* SecondViewController.swift */; };
 		374858C82270A4D800302C34 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374858C72270A4D800302C34 /* Second.storyboard */; };
 		376F66ED22A694C200C8B671 /* BooksActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E622A694C200C8B671 /* BooksActions.swift */; };
@@ -52,27 +50,6 @@
 			remoteGlobalIDString = 3748587D2270910C00302C34;
 			remoteInfo = SLToolboxDemo;
 		};
-		374858B82270924E00302C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 370DE67822203231006158C3;
-			remoteInfo = SLToolbox;
-		};
-		374858BA2270924E00302C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 370DE68122203231006158C3;
-			remoteInfo = SLToolboxTests;
-		};
-		374858BE2270927D00302C34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 370DE67722203231006158C3;
-			remoteInfo = SLToolbox;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,7 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				374858BD2270927D00302C34 /* SLToolbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +79,7 @@
 		3748589D2270910F00302C34 /* SLToolboxDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLToolboxDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		374858A12270910F00302C34 /* SLToolboxDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLToolboxDemoUITests.swift; sourceTree = "<group>"; };
 		374858A32270910F00302C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		374858B32270924E00302C34 /* SLToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SLToolbox.xcodeproj; path = ../../SLToolbox.xcodeproj; sourceTree = "<group>"; };
+		374858B32270924E00302C34 /* SLToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SLToolbox.xcodeproj; path = ../SLToolbox.xcodeproj; sourceTree = SOURCE_ROOT; };
 		374858C42270A20500302C34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		374858C72270A4D800302C34 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
 		376F66E622A694C200C8B671 /* BooksActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksActions.swift; sourceTree = "<group>"; };
@@ -130,7 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				374858BC2270927D00302C34 /* SLToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,15 +187,6 @@
 				374858B32270924E00302C34 /* SLToolbox.xcodeproj */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		374858B42270924E00302C34 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				374858B92270924E00302C34 /* SLToolbox.framework */,
-				374858BB2270924E00302C34 /* SLToolboxTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		376F66E422A6942C00C8B671 /* BooksTableViewDemo */ = {
@@ -318,7 +284,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				374858BF2270927D00302C34 /* PBXTargetDependency */,
 			);
 			name = SLToolboxDemo;
 			productName = SLToolboxDemo;
@@ -395,12 +360,6 @@
 			mainGroup = 374858752270910C00302C34;
 			productRefGroup = 3748587F2270910C00302C34 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 374858B42270924E00302C34 /* Products */;
-					ProjectRef = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3748587D2270910C00302C34 /* SLToolboxDemo */,
@@ -409,23 +368,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		374858B92270924E00302C34 /* SLToolbox.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SLToolbox.framework;
-			remoteRef = 374858B82270924E00302C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		374858BB2270924E00302C34 /* SLToolboxTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SLToolboxTests.xctest;
-			remoteRef = 374858BA2270924E00302C34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3748587C2270910C00302C34 /* Resources */ = {
@@ -511,11 +453,6 @@
 			isa = PBXTargetDependency;
 			target = 3748587D2270910C00302C34 /* SLToolboxDemo */;
 			targetProxy = 3748589E2270910F00302C34 /* PBXContainerItemProxy */;
-		};
-		374858BF2270927D00302C34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SLToolbox;
-			targetProxy = 374858BE2270927D00302C34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
