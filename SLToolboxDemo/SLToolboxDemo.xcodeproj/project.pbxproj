@@ -33,6 +33,8 @@
 		376F670A22A6AB8600C8B671 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376F670522A6AB8600C8B671 /* BookCell.xib */; };
 		376F670E22A6B32B00C8B671 /* BooksAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670D22A6B32B00C8B671 /* BooksAdapter.swift */; };
 		376F671322A8104E00C8B671 /* BooksSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F671222A8104E00C8B671 /* BooksSection.swift */; };
+		376F676C22A9440200C8B671 /* SLToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376F676322A93C6E00C8B671 /* SLToolbox.framework */; };
+		376F676D22A9440200C8B671 /* SLToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 376F676322A93C6E00C8B671 /* SLToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,15 +52,37 @@
 			remoteGlobalIDString = 3748587D2270910C00302C34;
 			remoteInfo = SLToolboxDemo;
 		};
+		376F676222A93C6E00C8B671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 370DE67822203231006158C3;
+			remoteInfo = SLToolbox;
+		};
+		376F676422A93C6E00C8B671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 370DE68122203231006158C3;
+			remoteInfo = SLToolboxTests;
+		};
+		376F676E22A9440200C8B671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 370DE67722203231006158C3;
+			remoteInfo = SLToolbox;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		374858C02270927E00302C34 /* Embed Frameworks */ = {
+		376F677022A9440300C8B671 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				376F676D22A9440200C8B671 /* SLToolbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376F676C22A9440200C8B671 /* SLToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +294,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		376F675E22A93C6E00C8B671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				376F676322A93C6E00C8B671 /* SLToolbox.framework */,
+				376F676522A93C6E00C8B671 /* SLToolboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,11 +313,12 @@
 				3748587A2270910C00302C34 /* Sources */,
 				3748587B2270910C00302C34 /* Frameworks */,
 				3748587C2270910C00302C34 /* Resources */,
-				374858C02270927E00302C34 /* Embed Frameworks */,
+				376F677022A9440300C8B671 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				376F676F22A9440200C8B671 /* PBXTargetDependency */,
 			);
 			name = SLToolboxDemo;
 			productName = SLToolboxDemo;
@@ -360,6 +395,12 @@
 			mainGroup = 374858752270910C00302C34;
 			productRefGroup = 3748587F2270910C00302C34 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 376F675E22A93C6E00C8B671 /* Products */;
+					ProjectRef = 374858B32270924E00302C34 /* SLToolbox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3748587D2270910C00302C34 /* SLToolboxDemo */,
@@ -368,6 +409,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		376F676322A93C6E00C8B671 /* SLToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SLToolbox.framework;
+			remoteRef = 376F676222A93C6E00C8B671 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		376F676522A93C6E00C8B671 /* SLToolboxTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SLToolboxTests.xctest;
+			remoteRef = 376F676422A93C6E00C8B671 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3748587C2270910C00302C34 /* Resources */ = {
@@ -453,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 3748587D2270910C00302C34 /* SLToolboxDemo */;
 			targetProxy = 3748589E2270910F00302C34 /* PBXContainerItemProxy */;
+		};
+		376F676F22A9440200C8B671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SLToolbox;
+			targetProxy = 376F676E22A9440200C8B671 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

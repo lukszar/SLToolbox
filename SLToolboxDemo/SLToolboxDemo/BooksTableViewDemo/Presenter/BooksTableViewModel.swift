@@ -11,6 +11,15 @@ import SLToolbox
 
 class BooksTableViewModel: TableViewModel {
 
+    var configurators: [CellConfigurator] = {
+
+        let book = BaseCellConfigurator(cell: BookCell.self, model: BookCellViewModel.self) { (cell, model) in
+            cell.configure(with: model)
+        }
+
+        return [book as! CellConfigurator]
+    }()
+
     override func registerCells() {
         guard let table = delegate?.tableView else { return }
 

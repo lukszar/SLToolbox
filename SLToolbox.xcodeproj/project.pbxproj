@@ -28,6 +28,7 @@
 		376F66E122A6845C00C8B671 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E022A6845C00C8B671 /* TableViewModel.swift */; };
 		376F66E322A6909500C8B671 /* TableViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */; };
 		376F670C22A6AC2300C8B671 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */; };
+		376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F676A22A9402F00C8B671 /* CellComposer.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -80,6 +81,7 @@
 		376F66E022A6845C00C8B671 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
 		376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelDelegate.swift; sourceTree = "<group>"; };
 		376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		376F676A22A9402F00C8B671 /* CellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComposer.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				376F66DD22A67C5F00C8B671 /* Element.swift */,
 				376F66E022A6845C00C8B671 /* TableViewModel.swift */,
 				376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */,
+				376F676A22A9402F00C8B671 /* CellComposer.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				3748586F2270752800302C34 /* String+URL.swift in Sources */,
+				376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */,
 				376F66DA22A6764A00C8B671 /* Collection.swift in Sources */,
 				376F66DC22A677B300C8B671 /* Section.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
