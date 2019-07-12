@@ -12,7 +12,7 @@ import SLToolbox
 protocol BooksViewControllerLogic: class {
 	// interface for displaying results by presenter
 
-    func displayBooks(collection: Collection)
+    func displayBooks(collection: CollectionDataSource)
 }
 
 class BooksViewController: UIViewController {
@@ -35,8 +35,11 @@ class BooksViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableViewModel = BooksTableViewModel()
-        tableViewModel?.delegate = self
+        tableView.tableFooterView = UIView()
+        tableViewModel = BooksTableViewModel(cellSelectHandler: {_,_ in })
+        tableViewModel?.setup(with: tableView)
+//        tableViewModel = TableViewModel()
+//        tableViewModel?.delegate = self
 
         interactor?.fetchBooks(request: BooksActions.Get.Request())
     }
@@ -44,16 +47,11 @@ class BooksViewController: UIViewController {
 
 
 extension BooksViewController : BooksViewControllerLogic {
-    func displayBooks(collection: Collection) {
+    func displayBooks(collection: CollectionDataSource) {
         tableViewModel?.update(with: collection)
-        tableView.reloadData()
+
     }
 }
 
-extension BooksViewController: TableViewModelDelegate {
-    func didSelectRow(at indexPath: IndexPath) {
-        return
-    }
-}
 
 extension BooksViewController: StoryboardLoadable {}

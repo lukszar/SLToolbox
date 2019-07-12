@@ -14,10 +14,6 @@ enum BooksActions {
         struct Response {
             var books: [Book]
         }
-        struct ViewModel {
-            struct Book: BookCellViewModel {
-                var name: String
-            }
-        }
+        struct ViewModel { }
     }
 }

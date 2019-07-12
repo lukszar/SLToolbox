@@ -12,31 +12,48 @@ public extension UICollectionView {
 
     // MARK: - Cell
 
+//    /**
+//     Register a **nib-based** cell type for using in UICollectionView.
+//
+//     - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `NibReusable` protocol
+//
+//     - seealso: `func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)`
+//
+//     - Author: SLToolbox - Łukasz Szarkowicz
+//     */
+//    final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: NibReusable {
+//
+//        register(cell.nib, forCellWithReuseIdentifier: cell.reuseIdentifier)
+//    }
+//
+//    /**
+//     Register a **class-based** cell type for using in UICollectionView.
+//
+//     - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `ClassReusable` protocol
+//
+//     - seealso: `func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String)`
+//
+//     - Author: SLToolbox - Łukasz Szarkowicz
+//     */
+//    final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: ClassReusable {
+//        register(cell.self, forCellWithReuseIdentifier: cell.reuseIdentifier)
+//    }
+
     /**
-     Register a **nib-based** cell type for using in UICollectionView.
+     Register a **Reusable** cell type for using in UICollectionView.
 
-     - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `NibReusable` protocol
-
-     - seealso: `func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String)`
-
-     - Author: SLToolbox - Łukasz Szarkowicz
-     */
-    final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: NibReusable {
-
-        register(cell.nib, forCellWithReuseIdentifier: cell.reuseIdentifier)
-    }
-
-    /**
-     Register a **class-based** cell type for using in UICollectionView.
-
-     - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `ClassReusable` protocol
+     - parameter cell: class type to register - subclass of `UICollectionViewCell` conforming `Reusable` protocol
 
      - seealso: `func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String)`
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: ClassReusable {
-        register(cell.self, forCellWithReuseIdentifier: cell.reuseIdentifier)
+    final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: Reusable {
+        if let nib = cell.nib {
+            register(nib, forCellWithReuseIdentifier: cell.reuseIdentifier)
+        } else {
+            register(cell.self, forCellWithReuseIdentifier: cell.reuseIdentifier)
+        }
     }
 
     /**
@@ -76,30 +93,48 @@ public extension UICollectionView {
 
     // MARK: - Header / Footer View
 
+//    /**
+//     Register a **nib-based** supplementary view type for using in UICollectionView.
+//
+//     - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `NibReusable` protocol
+//
+//     - seealso: `func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String)`
+//
+//     - Author: SLToolbox - Łukasz Szarkowicz
+//     */
+//    final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: NibReusable {
+//        register(supplementaryView.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
+//    }
+//
+//    /**
+//     Register a **class-based** supplementary view type for using in UICollectionView.
+//
+//     - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `ClassReusable` protocol
+//
+//     - seealso: `func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String)`
+//
+//     - Author: SLToolbox - Łukasz Szarkowicz
+//     */
+//    final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: ClassReusable {
+//        register(supplementaryView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
+//    }
+
     /**
-     Register a **nib-based** supplementary view type for using in UICollectionView.
+     Register a **Reusable** supplementary view type for using in UICollectionView.
 
-     - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `NibReusable` protocol
-
-     - seealso: `func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String)`
-
-     - Author: SLToolbox - Łukasz Szarkowicz
-     */
-    final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: NibReusable {
-        register(supplementaryView.nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
-    }
-
-    /**
-     Register a **class-based** supplementary view type for using in UICollectionView.
-
-     - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `ClassReusable` protocol
+     - parameter supplementaryView: class type to register - subclass of `UICollectionReusableView` conforming `Reusable` protocol
 
      - seealso: `func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String)`
 
      - Author: SLToolbox - Łukasz Szarkowicz
      */
-    final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: ClassReusable {
-        register(supplementaryView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
+    final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: Reusable {
+
+        if let nib = supplementaryView.nib {
+            register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
+        } else {
+            register(supplementaryView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
+        }
     }
 
 

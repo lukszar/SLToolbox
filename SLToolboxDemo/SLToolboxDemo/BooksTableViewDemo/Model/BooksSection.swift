@@ -9,7 +9,7 @@
 import Foundation
 import SLToolbox
 
-class BooksSection: SectionProtocol {
+class BooksSection: Section {
     var rows: [BookCellViewModel] = []
 
     typealias Model = BookCellViewModel

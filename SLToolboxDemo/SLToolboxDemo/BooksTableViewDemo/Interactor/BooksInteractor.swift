@@ -34,11 +34,7 @@ extension BooksInteractor: BooksInteractorLogic {
     func fetchBooks(request: BooksActions.Get.Request) {
         Delay.after(0.6) {
 
-            let list = [Book(title: "Book 1"),
-                        Book(title: "Book 2"),
-                        Book(title: "Book 3"),
-                        Book(title: "Book 4"),
-                        Book(title: "Book 5")]
+            let list = Book.dumpData
 
             self.presenter?.presentFetchedBooks(response: BooksActions.Get.Response(books: list))
         }

@@ -26,9 +26,9 @@
 		376F66DC22A677B300C8B671 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66DB22A677B300C8B671 /* Section.swift */; };
 		376F66DE22A67C5F00C8B671 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66DD22A67C5F00C8B671 /* Element.swift */; };
 		376F66E122A6845C00C8B671 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E022A6845C00C8B671 /* TableViewModel.swift */; };
-		376F66E322A6909500C8B671 /* TableViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */; };
 		376F670C22A6AC2300C8B671 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */; };
 		376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F676A22A9402F00C8B671 /* CellComposer.swift */; };
+		37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37778E2A22C3F42E00793812 /* AssociatedObject.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -79,9 +79,9 @@
 		376F66DB22A677B300C8B671 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		376F66DD22A67C5F00C8B671 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		376F66E022A6845C00C8B671 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelDelegate.swift; sourceTree = "<group>"; };
 		376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
 		376F676A22A9402F00C8B671 /* CellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComposer.swift; sourceTree = "<group>"; };
+		37778E2A22C3F42E00793812 /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -161,10 +161,17 @@
 				376F66DB22A677B300C8B671 /* Section.swift */,
 				376F66DD22A67C5F00C8B671 /* Element.swift */,
 				376F66E022A6845C00C8B671 /* TableViewModel.swift */,
-				376F66E222A6909500C8B671 /* TableViewModelDelegate.swift */,
 				376F676A22A9402F00C8B671 /* CellComposer.swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		37778E2922C3F41800793812 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				37778E2A22C3F42E00793812 /* AssociatedObject.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		37C5FC85226A0463006EF0D7 /* Loadable */ = {
@@ -183,6 +190,7 @@
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37778E2922C3F41800793812 /* Helper */,
 				376F66D822A6755700C8B671 /* Collection */,
 				376F66D422A671B700C8B671 /* Cell Helpers */,
 				37C5FC85226A0463006EF0D7 /* Loadable */,
@@ -373,7 +381,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Łukasz Szarkowicz";
 				TargetAttributes = {
 					370DE67722203231006158C3 = {
@@ -434,6 +442,7 @@
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				3748586F2270752800302C34 /* String+URL.swift in Sources */,
 				376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */,
+				37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */,
 				376F66DA22A6764A00C8B671 /* Collection.swift in Sources */,
 				376F66DC22A677B300C8B671 /* Section.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
@@ -442,7 +451,6 @@
 				374858672270577E00302C34 /* Fonts.swift in Sources */,
 				37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
-				376F66E322A6909500C8B671 /* TableViewModelDelegate.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
 				376F66E122A6845C00C8B671 /* TableViewModel.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
@@ -608,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";

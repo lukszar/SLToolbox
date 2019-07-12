@@ -1,8 +1,8 @@
 //
-//  BookCell.swift
+//  MovieCell.swift
 //  SLToolboxDemo
 //
-//  Created by Lukasz Szarkowicz on 04/06/2019.
+//  Created by Lukasz Szarkowicz on 27/06/2019.
 //  Generated using template created by Łukasz Szarkowicz.
 //  Copyright © 2019 Łukasz Szarkowicz. All rights reserved.
 //
@@ -11,12 +11,12 @@
 import UIKit
 import SLToolbox
 
-class BookCell: UITableViewCell {
+class MovieCell: UITableViewCell {
 
-    public var viewModel: BookCell.ViewModel?
+    // MovieCell cell's view implementation
+        public var viewModel: MovieCell.ViewModel?
 
     @IBOutlet weak var label: UILabel!
-    // BookCell cell's view implementation
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,8 +37,5 @@ class BookCell: UITableViewCell {
     /// Implementation of cell's styling
     fileprivate func commonInit() {
         // Provide style implementation here
-
-        backgroundColor = UIColor.red
-        backgroundView?.backgroundColor = UIColor.green
     }
 }

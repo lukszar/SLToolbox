@@ -25,8 +25,23 @@ class BooksPresenter {
 
 extension BooksPresenter : BooksPresenterLogic {
     func presentFetchedBooks(response: BooksActions.Get.Response) {
-        let viewModels = BooksAdapter.adapt(model: response.books)
-        let col = Collection(elements: viewModels)
+
+        var viewModels = response.books.map { (book) -> BookCell.ViewModel in
+            return BookCell.ViewModel(book: book)
+            } .map { (viewModel) -> AnyCellViewModel in
+                AnyCellViewModel(viewModel)
+        }
+
+        let others = Movie.dumpData.map { (movie) -> MovieCell.ViewModel in
+            return MovieCell.ViewModel(movie: movie)
+            } .map { (viewModel) -> AnyCellViewModel in
+                AnyCellViewModel(viewModel)
+        }
+
+        viewModels.append(contentsOf: others)
+
+
+        let col = CollectionDataSource(elements: viewModels)
 
         viewController?.displayBooks(collection: col)
     }

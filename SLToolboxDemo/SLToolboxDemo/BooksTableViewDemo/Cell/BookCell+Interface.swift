@@ -11,8 +11,23 @@
 import Foundation
 import SLToolbox
 
-/// View Model interface for BookCell
-protocol BookCellViewModel: Element {
-    // Create View Model interface for BookCell
-    var name: String { get }
+extension BookCell {
+
+    /// View Model interface for BookCell
+    struct ViewModel: CellViewModel {
+        typealias CellType = BookCell
+
+        var name: String
+    }
+}
+
+extension BookCell.ViewModel {
+
+    init() {
+        name = ""
+    }
+
+    init(book: Book) {
+        name = book.title
+    }
 }

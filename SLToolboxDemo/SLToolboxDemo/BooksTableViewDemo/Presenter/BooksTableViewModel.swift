@@ -9,56 +9,65 @@
 import UIKit
 import SLToolbox
 
+
+
 class BooksTableViewModel: TableViewModel {
 
-    var configurators: [CellConfigurator] = {
+    override func cellType(for element: AnyHashable) -> UITableViewCell.Type {
+        switch element {
 
-        let book = BaseCellConfigurator(cell: BookCell.self, model: BookCellViewModel.self) { (cell, model) in
-            cell.configure(with: model)
+        case is BookCell.ViewModel: return BookCell.self
+        case is MovieCell.ViewModel: return MovieCell.self
+
+        default: return UITableViewCell.self
         }
-
-        return [book as! CellConfigurator]
-    }()
-
-    override func registerCells() {
-        guard let table = delegate?.tableView else { return }
-
-        table.register(BookCell.self)
     }
 
-    func cellType(for model: Element) -> UITableViewCell.Type {
-
-        switch model {
-        case is BookCellViewModel:
-            return BookCell.self
-
+    override func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath, with element: AnyCellViewModel) {
+        switch (cell, element) {
+        case let (cell as BookCell, element as BookCell.ViewModel):
+            cell.configure(with: element)
+        case let (cell as MovieCell, element as MovieCell.ViewModel):
+            cell.configure(with: element)
         default:
-            return UITableViewCell.self
+            return
         }
     }
+
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        guard let element = collection?.element(at: indexPath) else { return UITableViewCell() }
+        guard let element = collection?.element(at: indexPath) as? AnyCellViewModel else {
+            fatalError()
+        }
 
-        switch element {
+        //        let theCellType = cellType(for: element.base as! AnyHashable)
 
-        case is BookCellViewModel:
-            return tableView.dequeueReusableCell(for: indexPath, with: BookCell.self) { (cell) in
-                cell.configure(with: element as! BookCellViewModel)
+        switch element.base {
+
+        case is BookCell.ViewModel:
+            let cell: BookCell = tableView.dequeueReusableCell(for: indexPath)
+            cell.configure(with: element.base as! BookCell.ViewModel)
+
+            return cell
+
+        case is MovieCell.ViewModel:
+
+            let cell: MovieCell = tableView.dequeueReusableCell(for: indexPath) { (cell) in
+                cell.configure(with: element.base as! MovieCell.ViewModel)
             }
 
+            return cell
+//            let cell: MovieCell = tableView.dequeueReusableCell(for: indexPath) as! MovieCell
+//            cell.configure(with: element.base as! MovieCell.ViewModel)
+//
+//            return cell
+
         default:
-            return UITableViewCell()
-
+            fatalError("sfdsdfsdfdsfsdfsd")
         }
+
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
-        guard let model = collection?.element(at: indexPath) else { return 0.0 }
-        let type = cellType(for: model) as? HeightProvided.Type
-
-        return type?.providedHeight ?? 0.0
-    }
 }
+

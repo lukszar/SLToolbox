@@ -8,50 +8,43 @@
 
 import Foundation
 
-public protocol SectionProtocol: class {
-    associatedtype Model
-    associatedtype Cell: UITableViewCell & ConfigurableCell where Cell.ViewModelType == Model
+public extension CollectionDataSource {
+    class Section {
 
-    var rows: [Model] { get set }
+        public var title: String?
 
-}
+        private(set) var rows: Array<RowType>
 
-extension SectionProtocol {
+        public required init(title: String? = nil, rows: [RowType]? = nil) {
+            self.rows = rows ?? []
+            self.title = title
+        }
 
-    var numberOfRows: Int {
-        return rows.count
-    }
+        final public var numberOfRows: Int {
+            return rows.count
+        }
 
-    func append(contentsOf array: [Model]) {
-        self.rows.append(contentsOf: array)
-    }
+        final public func append(contentsOf array: [RowType]) {
+            self.rows.append(contentsOf: array)
+        }
 
-    func append(_ element: Model) {
-        self.rows.append(element)
-    }
-}
+        final public func append(_ element: RowType) {
+            self.rows.append(element)
+        }
 
+        final public func removeAll() {
+            self.rows.removeAll()
+        }
 
-
-public class Section {
-
-    private (set) var rows: [Element]
-
-    init() {
-        self.rows = [Element]()
-    }
-
-    var title: String?
-
-    var numberOfRows: Int {
-        return rows.count
-    }
-
-    func append(contentsOf array: [Element]) {
-        self.rows.append(contentsOf: array)
-    }
-
-    func append(_ element: Element) {
-        self.rows.append(element)
+        final public subscript(index: Int) -> RowType? {
+            if index < rows.count {
+                return self.rows[index]
+            } else {
+                return nil
+            }
+        }
     }
 }
+
+
+

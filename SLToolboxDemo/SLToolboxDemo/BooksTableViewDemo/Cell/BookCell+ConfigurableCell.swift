@@ -12,11 +12,8 @@ import UIKit
 import SLToolbox
 
 extension BookCell: ConfigurableCell {
-    func configure(with viewModel: BookCellViewModel) {
-
-        self.label.text = viewModel.name
-        // Provide implementation for configuring BookCell with BookCellViewModel.
+    func configure(with viewModel: BookCell.ViewModel) {
+        label.text = viewModel.name
     }
-
-    typealias T = BookCellViewModel
 }
+

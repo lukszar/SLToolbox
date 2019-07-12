@@ -8,31 +8,47 @@
 
 import UIKit
 
-final public class Collection {
+final public class CollectionDataSource {
+    public typealias RowType = AnyCellViewModel
 
-    private var sections: [Section]
+    private(set) var sections: [Section]
 
     public init() {
         sections = []
     }
 
-    public convenience init(elements: [[Element]]) {
+    public convenience init(elements: [[RowType]]) {
         self.init()
         update(with: elements)
     }
 
-    public convenience init(elements: [Element]) {
+    public convenience init(elements: [RowType]) {
         self.init()
         update(with: [elements])
     }
 
-    public func update(with models: [[Element]]) {
-        sections = []
+    public func update(with models: [[RowType]]) {
+        removeAllSections()
         models.forEach { (elementsArray) in
-            let section = Section()
-            section.append(contentsOf: elementsArray)
-            sections.append(section)
+            self.appendSection({ (section) in
+                section.append(contentsOf: elementsArray)
+            })
         }
+    }
+
+    @discardableResult
+    public func appendSection<T: Section>(with title: String? = nil, _ configure: ((T) -> Void) = { _ in }) -> T {
+
+        let newSection = T()
+        newSection.title = title
+        configure(newSection)
+        appendSection(newSection)
+
+        return newSection
+    }
+
+    public func appendSection(_ section: Section) {
+        sections.append(section)
     }
 
     public func removeAllSections() {
@@ -49,7 +65,12 @@ final public class Collection {
         return sections[index]
     }
 
-    public func element(at indexPath: IndexPath) -> Element? {
+    final public subscript(index: Int) -> Section? {
+        return section(at: index)
+    }
+
+    public func element(at indexPath: IndexPath) -> RowType? {
+
         guard let sectionElement = section(at: indexPath.section), indexPath.row < sectionElement.numberOfRows else { return nil }
 
         return sectionElement.rows[indexPath.row]
@@ -58,11 +79,19 @@ final public class Collection {
     public var numberOfSections: Int {
         return sections.count
     }
-
-    public func numberOfRowsInSection(_ section: Int) -> Int {
-        guard section < numberOfSections else { return 0 }
-
-        return sections[section].numberOfRows
-    }
 }
 
+public extension CollectionDataSource {
+
+    var viewModelTypes: [Any.Type] {
+        return flattenDataSource()
+            .map { type(of: $0.base).self }
+    }
+
+    /// returns all elements from all sections in 1 array.
+    func flattenDataSource() -> [RowType] {
+        return sections.reduce(into: [RowType]()) { (result, current) in
+            return result.append(contentsOf: current.rows)
+        }
+    }
+}
