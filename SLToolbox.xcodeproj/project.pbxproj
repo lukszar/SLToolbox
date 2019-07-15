@@ -22,7 +22,6 @@
 		37485871227075AE00302C34 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485870227075AE00302C34 /* Defaults.swift */; };
 		3748587422707DDC00302C34 /* Bundle+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748587322707DDC00302C34 /* Bundle+Info.swift */; };
 		376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66D522A671EE00C8B671 /* UITableViewCell+HeightProvided.swift */; };
-		376F670C22A6AC2300C8B671 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */; };
 		37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37778E2A22C3F42E00793812 /* AssociatedObject.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
@@ -429,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376F670C22A6AC2300C8B671 /* ConfigurableCell.swift in Sources */,
 				37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */,
 				3748586B2270698D00302C34 /* CallUtil.swift in Sources */,
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
