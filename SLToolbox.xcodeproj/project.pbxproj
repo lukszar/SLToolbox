@@ -22,12 +22,7 @@
 		37485871227075AE00302C34 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485870227075AE00302C34 /* Defaults.swift */; };
 		3748587422707DDC00302C34 /* Bundle+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748587322707DDC00302C34 /* Bundle+Info.swift */; };
 		376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66D522A671EE00C8B671 /* UITableViewCell+HeightProvided.swift */; };
-		376F66DA22A6764A00C8B671 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66D922A6764A00C8B671 /* Collection.swift */; };
-		376F66DC22A677B300C8B671 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66DB22A677B300C8B671 /* Section.swift */; };
-		376F66DE22A67C5F00C8B671 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66DD22A67C5F00C8B671 /* Element.swift */; };
-		376F66E122A6845C00C8B671 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66E022A6845C00C8B671 /* TableViewModel.swift */; };
 		376F670C22A6AC2300C8B671 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */; };
-		376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F676A22A9402F00C8B671 /* CellComposer.swift */; };
 		37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37778E2A22C3F42E00793812 /* AssociatedObject.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
@@ -441,10 +436,7 @@
 				37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				3748586F2270752800302C34 /* String+URL.swift in Sources */,
-				376F676B22A9402F00C8B671 /* CellComposer.swift in Sources */,
 				37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */,
-				376F66DA22A6764A00C8B671 /* Collection.swift in Sources */,
-				376F66DC22A677B300C8B671 /* Section.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
 				37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
@@ -452,13 +444,11 @@
 				37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
-				376F66E122A6845C00C8B671 /* TableViewModel.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
 				3748586D227072E500302C34 /* UIImage+Resize.swift in Sources */,
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */,
-				376F66DE22A67C5F00C8B671 /* Element.swift in Sources */,
 				37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */,
 				3748587422707DDC00302C34 /* Bundle+Info.swift in Sources */,
 				374858692270666100302C34 /* Delay.swift in Sources */,
