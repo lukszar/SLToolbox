@@ -73,7 +73,7 @@
 		376F66DB22A677B300C8B671 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		376F66DD22A67C5F00C8B671 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		376F66E022A6845C00C8B671 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		376F670B22A6AC2300C8B671 /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		376F676A22A9402F00C8B671 /* CellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComposer.swift; sourceTree = "<group>"; };
 		37778E2A22C3F42E00793812 /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				376F66D522A671EE00C8B671 /* UITableViewCell+HeightProvided.swift */,
-				376F670B22A6AC2300C8B671 /* ConfigurableCell.swift */,
+				376F670B22A6AC2300C8B671 /* CellConfigurable.swift */,
 			);
 			path = "Cell Helpers";
 			sourceTree = "<group>";
