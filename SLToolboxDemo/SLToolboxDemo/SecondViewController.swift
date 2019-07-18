@@ -13,7 +13,13 @@ class SecondViewController: UIViewController, StoryboardLoadable {
     static var storyboardIdentifier: String? = "Second"
 //    static var storyboardName = "Main"
 
-    
+
+
+    override func awakeFromNib() {
+        
+    }
+     
+
 }
 
 
