@@ -11,6 +11,7 @@
 		370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DE68622203231006158C3 /* SLToolboxTests.swift */; };
 		370DE68922203231006158C3 /* SLToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 370DE67B22203231006158C3 /* SLToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371DF5E922E089670041A1AC /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DF5E822E089670041A1AC /* UIView+Add.swift */; };
+		371DF5ED22E0D2390041A1AC /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DF5EC22E0D2390041A1AC /* Identifier.swift */; };
 		3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748585E226F3A9100302C34 /* NibLoadable.swift */; };
 		37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */; };
 		37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */; };
@@ -60,6 +61,7 @@
 		370DE68622203231006158C3 /* SLToolboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLToolboxTests.swift; sourceTree = "<group>"; };
 		370DE68822203231006158C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371DF5E822E089670041A1AC /* UIView+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
+		371DF5EC22E0D2390041A1AC /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		3748585E226F3A9100302C34 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		371DF5EB22E0D2210041A1AC /* Identifier */ = {
+			isa = PBXGroup;
+			children = (
+				371DF5EC22E0D2390041A1AC /* Identifier.swift */,
+			);
+			path = Identifier;
+			sourceTree = "<group>";
+		};
 		3748587222707DAC00302C34 /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +214,7 @@
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				371DF5EB22E0D2210041A1AC /* Identifier */,
 				37892B5422DF6F7E0054345A /* InlineConfigurable */,
 				37778E2922C3F41800793812 /* Helper */,
 				376F66D822A6755700C8B671 /* Collection */,
@@ -460,6 +471,7 @@
 				37892B5622DF6FA50054345A /* InlineConfigurable.swift in Sources */,
 				371DF5E922E089670041A1AC /* UIView+Add.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
+				371DF5ED22E0D2390041A1AC /* Identifier.swift in Sources */,
 				37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */,
 				37EE9FBD22205A53006F811B /* Gradient.swift in Sources */,
 				374858672270577E00302C34 /* Fonts.swift in Sources */,
