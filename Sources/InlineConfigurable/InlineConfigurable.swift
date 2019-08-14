@@ -10,7 +10,7 @@ import Foundation
 
 public protocol InlineConfigurable {}
 
-extension InlineConfigurable {
+extension InlineConfigurable where Self: AnyObject {
 
     /**
      Configure object inline with closures

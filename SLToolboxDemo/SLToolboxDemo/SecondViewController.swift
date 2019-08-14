@@ -9,14 +9,14 @@
 import UIKit
 import SLToolbox
 
-class SecondViewController: UIViewController, StoryboardLoadable {
+class SecondViewController: UIViewController {
     static var storyboardIdentifier: String? = "Second"
 //    static var storyboardName = "Main"
 
 
 
     override func awakeFromNib() {
-        
+        SecondViewController.storyboardName
     }
      
 

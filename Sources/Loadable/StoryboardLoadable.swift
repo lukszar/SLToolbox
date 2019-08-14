@@ -76,4 +76,6 @@ public extension StoryboardLoadable where Self: UIViewController {
     }
 }
 
+extension UIViewController: StoryboardLoadable {}
+
 
