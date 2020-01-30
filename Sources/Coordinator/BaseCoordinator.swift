@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class BaseCoordinator: NSObject, Coordinator {
+open class BaseCoordinator: NSObject, Coordinator {
     
     fileprivate(set) weak var parentCoordinator: Coordinator?
     public var childCoordinators: [Coordinator]
 
-    var completionHandler: (() -> Void)?
+    public var completionHandler: (() -> Void)?
 
     override init() {
         childCoordinators = []

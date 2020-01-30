@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppCoordinator: BaseCoordinator {
+open class AppCoordinator: BaseCoordinator {
 
     fileprivate let window: UIWindow
 
