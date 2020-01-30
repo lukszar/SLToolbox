@@ -20,13 +20,13 @@ open class AppCoordinator: BaseCoordinator {
 
     // MARK: - Init
 
-    init(window: UIWindow) {
+    public init(window: UIWindow) {
         self.window = window
         super.init()
     }
 
     // MARK: - Flow
-    func setRoot(vc: UIViewController, animated: Bool = true) {
+    public func setRoot(vc: UIViewController, animated: Bool = true) {
         window.rootViewController = vc
         window.makeKeyAndVisible()
 
