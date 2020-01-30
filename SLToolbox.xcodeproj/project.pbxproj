@@ -26,6 +26,11 @@
 		376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376F66D522A671EE00C8B671 /* UITableViewCell+HeightProvided.swift */; };
 		37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37778E2A22C3F42E00793812 /* AssociatedObject.swift */; };
 		37892B5622DF6FA50054345A /* InlineConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37892B5522DF6FA50054345A /* InlineConfigurable.swift */; };
+		37AE88FE23E37A1B00A6499F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE88FD23E37A1B00A6499F /* Coordinator.swift */; };
+		37AE890023E37A5000A6499F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE88FF23E37A5000A6499F /* BaseCoordinator.swift */; };
+		37AE890223E37B4700A6499F /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE890123E37B4700A6499F /* NavigationCoordinator.swift */; };
+		37AE890423E37BD700A6499F /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE890323E37BD700A6499F /* TabBarCoordinator.swift */; };
+		37AE890623E37C1400A6499F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE890523E37C1400A6499F /* AppCoordinator.swift */; };
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
@@ -82,6 +87,11 @@
 		376F676A22A9402F00C8B671 /* CellComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellComposer.swift; sourceTree = "<group>"; };
 		37778E2A22C3F42E00793812 /* AssociatedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedObject.swift; sourceTree = "<group>"; };
 		37892B5522DF6FA50054345A /* InlineConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineConfigurable.swift; sourceTree = "<group>"; };
+		37AE88FD23E37A1B00A6499F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		37AE88FF23E37A5000A6499F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		37AE890123E37B4700A6499F /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		37AE890323E37BD700A6499F /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		37AE890523E37C1400A6499F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
@@ -198,6 +208,18 @@
 			path = InlineConfigurable;
 			sourceTree = "<group>";
 		};
+		37AE88FC23E37A0B00A6499F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				37AE88FD23E37A1B00A6499F /* Coordinator.swift */,
+				37AE890523E37C1400A6499F /* AppCoordinator.swift */,
+				37AE88FF23E37A5000A6499F /* BaseCoordinator.swift */,
+				37AE890123E37B4700A6499F /* NavigationCoordinator.swift */,
+				37AE890323E37BD700A6499F /* TabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		37C5FC85226A0463006EF0D7 /* Loadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +236,7 @@
 		37EE9F9E222033F8006F811B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				37AE88FC23E37A0B00A6499F /* Coordinator */,
 				371DF5EB22E0D2210041A1AC /* Identifier */,
 				37892B5422DF6F7E0054345A /* InlineConfigurable */,
 				37778E2922C3F41800793812 /* Helper */,
@@ -461,13 +484,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37AE890623E37C1400A6499F /* AppCoordinator.swift in Sources */,
 				37485865227050AC00302C34 /* StoryboardLoadable.swift in Sources */,
 				3748586B2270698D00302C34 /* CallUtil.swift in Sources */,
+				37AE890423E37BD700A6499F /* TabBarCoordinator.swift in Sources */,
 				37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */,
 				37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */,
 				37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */,
 				3748586F2270752800302C34 /* String+URL.swift in Sources */,
 				37778E2B22C3F42E00793812 /* AssociatedObject.swift in Sources */,
+				37AE890223E37B4700A6499F /* NavigationCoordinator.swift in Sources */,
 				37892B5622DF6FA50054345A /* InlineConfigurable.swift in Sources */,
 				371DF5E922E089670041A1AC /* UIView+Add.swift in Sources */,
 				37EE9FB022204719006F811B /* UIColor+Adjust.swift in Sources */,
@@ -479,12 +505,14 @@
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
+				37AE88FE23E37A1B00A6499F /* Coordinator.swift in Sources */,
 				3748586D227072E500302C34 /* UIImage+Resize.swift in Sources */,
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */,
 				37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */,
 				3748587422707DDC00302C34 /* Bundle+Info.swift in Sources */,
+				37AE890023E37A5000A6499F /* BaseCoordinator.swift in Sources */,
 				374858692270666100302C34 /* Delay.swift in Sources */,
 				3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */,
 				37EE9FB7222051C7006F811B /* Date+ISOString.swift in Sources */,
@@ -640,7 +668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -657,6 +685,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.szarkowicz.SLToolbox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -667,7 +696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -684,6 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.szarkowicz.SLToolbox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
