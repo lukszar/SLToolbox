@@ -15,8 +15,9 @@ open class BaseCoordinator: NSObject, Coordinator {
 
     public var completionHandler: (() -> Void)?
 
-    override init() {
+    override public init() {
         childCoordinators = []
+        super.init()
     }
 
     open func start() {

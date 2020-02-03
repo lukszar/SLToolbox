@@ -10,10 +10,15 @@ import UIKit
 
 open class TabBarCoordinator: BaseCoordinator, UITabBarControllerDelegate {
 
-    var tabController: UITabBarController
+    public var tabController: UITabBarController
 
-    var viewControllers: [UIViewController] {
+    public var viewControllers: [UIViewController] {
         return self.childCoordinators.compactMap { ($0 as? NavigationCoordinator)?.navigationController }
+    }
+    
+    override public convenience init() {
+        let tab = UITabBarController()
+        self.init(tabController: tab)
     }
 
     public init(tabController: UITabBarController) {

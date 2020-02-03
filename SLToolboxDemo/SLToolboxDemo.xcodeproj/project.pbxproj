@@ -18,6 +18,7 @@
 		374858C82270A4D800302C34 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374858C72270A4D800302C34 /* Second.storyboard */; };
 		376F676C22A9440200C8B671 /* SLToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376F676322A93C6E00C8B671 /* SLToolbox.framework */; };
 		376F676D22A9440200C8B671 /* SLToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 376F676322A93C6E00C8B671 /* SLToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37AE891E23E84F0400A6499F /* MyCustomCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE891D23E84F0400A6499F /* MyCustomCoordinator.swift */; };
 		37E82757231FE38B002096EE /* TryActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E82750231FE38B002096EE /* TryActions.swift */; };
 		37E82758231FE38B002096EE /* TryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E82751231FE38B002096EE /* TryPresenter.swift */; };
 		37E82759231FE38B002096EE /* TryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E82752231FE38B002096EE /* TryWorker.swift */; };
@@ -96,6 +97,7 @@
 		374858B32270924E00302C34 /* SLToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SLToolbox.xcodeproj; path = ../SLToolbox.xcodeproj; sourceTree = SOURCE_ROOT; };
 		374858C42270A20500302C34 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		374858C72270A4D800302C34 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		37AE891D23E84F0400A6499F /* MyCustomCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCoordinator.swift; sourceTree = "<group>"; };
 		37E82750231FE38B002096EE /* TryActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryActions.swift; sourceTree = "<group>"; };
 		37E82751231FE38B002096EE /* TryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryPresenter.swift; sourceTree = "<group>"; };
 		37E82752231FE38B002096EE /* TryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryWorker.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		374858802270910C00302C34 /* SLToolboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37AE891B23E84EED00A6499F /* Coordinator */,
 				37E8274E231FE372002096EE /* Try */,
 				374858812270910C00302C34 /* AppDelegate.swift */,
 				374858832270910C00302C34 /* ViewController.swift */,
@@ -201,6 +204,14 @@
 				376F676522A93C6E00C8B671 /* SLToolboxTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		37AE891B23E84EED00A6499F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				37AE891D23E84F0400A6499F /* MyCustomCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		37E8274E231FE372002096EE /* Try */ = {
@@ -380,6 +391,7 @@
 				374858C52270A20500302C34 /* SecondViewController.swift in Sources */,
 				374858842270910C00302C34 /* ViewController.swift in Sources */,
 				37E82759231FE38B002096EE /* TryWorker.swift in Sources */,
+				37AE891E23E84F0400A6499F /* MyCustomCoordinator.swift in Sources */,
 				37E8275D231FE38B002096EE /* TryConfigurator.swift in Sources */,
 				374858822270910C00302C34 /* AppDelegate.swift in Sources */,
 				37E8275C231FE38B002096EE /* TryInteractor.swift in Sources */,

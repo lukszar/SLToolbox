@@ -10,9 +10,9 @@ import UIKit
 
 open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegate {
 
-    var navigationController: UINavigationController
+    public var navigationController: UINavigationController
 
-    override convenience init() {
+    override public convenience init() {
         let nav = UINavigationController()
         self.init(navigationController: nav)
     }
