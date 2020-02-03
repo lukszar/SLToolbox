@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegate {
+open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegate {
 
     var navigationController: UINavigationController
 

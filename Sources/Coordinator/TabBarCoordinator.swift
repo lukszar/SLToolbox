@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TabBarCoordinator: BaseCoordinator, UITabBarControllerDelegate {
+open class TabBarCoordinator: BaseCoordinator, UITabBarControllerDelegate {
 
     var tabController: UITabBarController
 
