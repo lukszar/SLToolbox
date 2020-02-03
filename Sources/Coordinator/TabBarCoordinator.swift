@@ -16,7 +16,7 @@ open class TabBarCoordinator: BaseCoordinator, UITabBarControllerDelegate {
         return self.childCoordinators.compactMap { ($0 as? NavigationCoordinator)?.navigationController }
     }
 
-    init(tabController: UITabBarController) {
+    public init(tabController: UITabBarController) {
 
         self.tabController = tabController
         super.init()

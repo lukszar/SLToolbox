@@ -17,7 +17,7 @@ open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegat
         self.init(navigationController: nav)
     }
 
-    init(navigationController: UINavigationController) {
+    public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         super.init()
         self.navigationController.delegate = self
