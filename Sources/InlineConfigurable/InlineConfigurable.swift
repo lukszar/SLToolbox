@@ -8,6 +8,20 @@
 
 import Foundation
 
+public struct Configurator<T> {
+
+    private let configureHandler: (T) -> Void
+
+    public init(_ configuration: @escaping (T) -> Void) {
+        self.configureHandler = configuration
+    }
+    
+    public func configure(_ element: T) -> T {
+        configureHandler(element)
+        return element
+    }
+}
+
 public protocol InlineConfigurable {}
 
 extension InlineConfigurable where Self: AnyObject {
@@ -25,6 +39,12 @@ extension InlineConfigurable where Self: AnyObject {
         try configurator(self)
         return self
     }
+    
+    @discardableResult
+    public func configure(using configurator: Configurator<Self>) -> Self {
+        return configurator.configure(self)
+    }
+    
 }
 
 
