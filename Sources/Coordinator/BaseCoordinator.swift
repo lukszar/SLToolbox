@@ -19,7 +19,7 @@ open class BaseCoordinator: NSObject, Coordinator {
         childCoordinators = []
     }
 
-    public func start() {
+    open func start() {
         fatalError("Implementation for start() method not provided. Provide implementation for \(self)")
     }
 }
