@@ -22,6 +22,18 @@ open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegat
         super.init()
         self.navigationController.delegate = self
     }
+    
+    public func push(_ viewConroller: UIViewController, animated: Bool) {
+        DispatchQueue.main.async {
+            self.navigationController.pushViewController(viewConroller, animated: animated)
+        }
+    }
+    
+    public func present(_ viewConroller: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        DispatchQueue.main.async {
+            self.navigationController.present(viewConroller, animated: animated, completion: completion)
+        }
+    }
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
 

@@ -15,7 +15,7 @@ public struct AnyCellViewModel {
     public var base: Any
     private let equals: (Any) -> Bool
 
-    public init<H>(_ base: H) where H : Hashable & ConfigurationProvider {
+    public init<H>(_ base: H) where H : Hashable {
 
         self.base = base
         self.equals = { $0 as? H == base }
