@@ -35,6 +35,13 @@ open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegat
         super.end()
     }
     
+    public func dismiss(animated: Bool, completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            self.navigationController.dismiss(animated: animated, completion: completion)
+        }
+        end()
+    }
+    
     public func push(_ viewConroller: UIViewController, animated: Bool) {
         DispatchQueue.main.async {
             self.navigationController.pushViewController(viewConroller, animated: animated)
