@@ -33,6 +33,7 @@
 		37C5FC87226A08C1006EF0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC86226A08C1006EF0D7 /* Reusable.swift */; };
 		37C5FC89226A0B9F006EF0D7 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */; };
 		37DE117C2415A9830062E4E4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE88FD23E37A1B00A6499F /* Coordinator.swift */; };
+		37DE118424164E3C0062E4E4 /* PresentingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DE118324164E3C0062E4E4 /* PresentingCoordinator.swift */; };
 		37EE9FA7222037A3006F811B /* Comparable+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */; };
 		37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FA9222038DE006F811B /* ComparableTests.swift */; };
 		37EE9FAC222042E3006F811B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE9FAB222042E3006F811B /* UIColor+RGB.swift */; };
@@ -94,6 +95,7 @@
 		37AE890523E37C1400A6499F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		37C5FC86226A08C1006EF0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		37C5FC88226A0B9F006EF0D7 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		37DE118324164E3C0062E4E4 /* PresentingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingCoordinator.swift; sourceTree = "<group>"; };
 		37EE9FA6222037A3006F811B /* Comparable+Clamped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+Clamped.swift"; sourceTree = "<group>"; };
 		37EE9FA9222038DE006F811B /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		37EE9FAB222042E3006F811B /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				37AE88FD23E37A1B00A6499F /* Coordinator.swift */,
 				37AE890523E37C1400A6499F /* AppCoordinator.swift */,
 				37AE88FF23E37A5000A6499F /* BaseCoordinator.swift */,
+				37DE118324164E3C0062E4E4 /* PresentingCoordinator.swift */,
 				37AE890123E37B4700A6499F /* NavigationCoordinator.swift */,
 				37AE890323E37BD700A6499F /* TabBarCoordinator.swift */,
 			);
@@ -507,6 +510,7 @@
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
 				3748586D227072E500302C34 /* UIImage+Resize.swift in Sources */,
+				37DE118424164E3C0062E4E4 /* PresentingCoordinator.swift in Sources */,
 				37EE9FC022205D62006F811B /* UILabel+Truncated.swift in Sources */,
 				37EE9FBA22205595006F811B /* String+Date.swift in Sources */,
 				376F66D622A671EE00C8B671 /* UITableViewCell+HeightProvided.swift in Sources */,

@@ -9,7 +9,6 @@
 import Foundation
 
 public protocol Coordinator: class {
-    var presentingViewController: UIViewController? { get set }
     var childCoordinators: [Coordinator] { get }
     func start()
 }

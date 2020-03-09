@@ -9,7 +9,6 @@
 import Foundation
 
 open class BaseCoordinator: NSObject, Coordinator {
-    public var presentingViewController: UIViewController?
     
     fileprivate(set) weak var parentCoordinator: BaseCoordinator?
     public private(set) var childCoordinators: [Coordinator]
@@ -28,10 +27,6 @@ open class BaseCoordinator: NSObject, Coordinator {
     
     func end() {
         parentCoordinator?.remove(coordinator: self)
-    }
-    
-    public func closeView() {
-        presentingViewController?.dismiss(animated: true, completion: { self.end() })
     }
 }
 
