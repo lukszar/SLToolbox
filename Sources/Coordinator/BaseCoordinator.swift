@@ -45,4 +45,9 @@ extension BaseCoordinator {
     public func remove<T: Coordinator>(coordinator: T) {
         childCoordinators = childCoordinators.filter { $0 !== coordinator }
     }
+    
+    /// Remove all child coordinators
+    public func removeAll() {
+        childCoordinators.removeAll()
+    }
 }
