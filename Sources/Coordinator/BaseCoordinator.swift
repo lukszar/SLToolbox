@@ -9,9 +9,10 @@
 import Foundation
 
 open class BaseCoordinator: NSObject, Coordinator {
+    public var presentingViewController: UIViewController?
     
-    fileprivate(set) weak var parentCoordinator: Coordinator?
-    public var childCoordinators: [Coordinator]
+    fileprivate(set) weak var parentCoordinator: BaseCoordinator?
+    public private(set) var childCoordinators: [Coordinator]
 
     public var completionHandler: (() -> Void)?
 
@@ -19,9 +20,18 @@ open class BaseCoordinator: NSObject, Coordinator {
         childCoordinators = []
         super.init()
     }
-
+    
     open func start() {
         fatalError("Implementation for start() method not provided. Provide implementation for \(self)")
+    }
+    
+    
+    func end() {
+        parentCoordinator?.remove(coordinator: self)
+    }
+    
+    public func closeView() {
+        presentingViewController?.dismiss(animated: true, completion: { self.end() })
     }
 }
 
