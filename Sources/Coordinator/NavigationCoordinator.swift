@@ -59,7 +59,18 @@ open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegat
         guard let fromVC = navigationController.transitionCoordinator?.viewController(forKey: .from) else { return }
         if navigationController.viewControllers.contains(fromVC) { return }
 
-        end()
+        if navigationController.transitionCoordinator?.isInteractive == true {
+            navigationController.transitionCoordinator?.notifyWhenInteractionEnds({ (context) in
+                if !context.isCancelled {
+                    self.end()
+                }
+            })
+        } else {
+            end()
+        }
+        
         completionHandler?()
     }
+    
+    
 }
