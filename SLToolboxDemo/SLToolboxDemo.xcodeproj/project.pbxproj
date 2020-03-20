@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3738E27824191C4C00579BEE /* View1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27124191C4C00579BEE /* View1Coordinator.swift */; };
+		3738E27924191C4C00579BEE /* View1Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27224191C4C00579BEE /* View1Module.swift */; };
+		3738E27A24191C4C00579BEE /* View1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27324191C4C00579BEE /* View1Presenter.swift */; };
+		3738E27B24191C4C00579BEE /* View1Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27424191C4C00579BEE /* View1Worker.swift */; };
+		3738E27C24191C4C00579BEE /* View1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27524191C4C00579BEE /* View1ViewController.swift */; };
+		3738E27D24191C4C00579BEE /* View1Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27624191C4C00579BEE /* View1Interactor.swift */; };
+		3738E27E24191C4C00579BEE /* View1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E27724191C4C00579BEE /* View1ViewModel.swift */; };
+		3738E28724191C6700579BEE /* View2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28024191C6700579BEE /* View2Coordinator.swift */; };
+		3738E28824191C6700579BEE /* View2Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28124191C6700579BEE /* View2Module.swift */; };
+		3738E28924191C6700579BEE /* View2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28224191C6700579BEE /* View2Presenter.swift */; };
+		3738E28A24191C6700579BEE /* View2Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28324191C6700579BEE /* View2Worker.swift */; };
+		3738E28B24191C6700579BEE /* View2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28424191C6700579BEE /* View2ViewController.swift */; };
+		3738E28C24191C6700579BEE /* View2Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28524191C6700579BEE /* View2Interactor.swift */; };
+		3738E28D24191C6700579BEE /* View2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738E28624191C6700579BEE /* View2ViewModel.swift */; };
 		374858822270910C00302C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858812270910C00302C34 /* AppDelegate.swift */; };
 		374858842270910C00302C34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374858832270910C00302C34 /* ViewController.swift */; };
 		374858872270910C00302C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374858852270910C00302C34 /* Main.storyboard */; };
@@ -81,6 +95,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3738E27124191C4C00579BEE /* View1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Coordinator.swift; sourceTree = "<group>"; };
+		3738E27224191C4C00579BEE /* View1Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Module.swift; sourceTree = "<group>"; };
+		3738E27324191C4C00579BEE /* View1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Presenter.swift; sourceTree = "<group>"; };
+		3738E27424191C4C00579BEE /* View1Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Worker.swift; sourceTree = "<group>"; };
+		3738E27524191C4C00579BEE /* View1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1ViewController.swift; sourceTree = "<group>"; };
+		3738E27624191C4C00579BEE /* View1Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1Interactor.swift; sourceTree = "<group>"; };
+		3738E27724191C4C00579BEE /* View1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View1ViewModel.swift; sourceTree = "<group>"; };
+		3738E28024191C6700579BEE /* View2Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Coordinator.swift; sourceTree = "<group>"; };
+		3738E28124191C6700579BEE /* View2Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Module.swift; sourceTree = "<group>"; };
+		3738E28224191C6700579BEE /* View2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Presenter.swift; sourceTree = "<group>"; };
+		3738E28324191C6700579BEE /* View2Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Worker.swift; sourceTree = "<group>"; };
+		3738E28424191C6700579BEE /* View2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2ViewController.swift; sourceTree = "<group>"; };
+		3738E28524191C6700579BEE /* View2Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Interactor.swift; sourceTree = "<group>"; };
+		3738E28624191C6700579BEE /* View2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2ViewModel.swift; sourceTree = "<group>"; };
 		3748587E2270910C00302C34 /* SLToolboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLToolboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374858812270910C00302C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		374858832270910C00302C34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +161,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3738E26F24191C3100579BEE /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				3738E27124191C4C00579BEE /* View1Coordinator.swift */,
+				3738E27224191C4C00579BEE /* View1Module.swift */,
+				3738E27324191C4C00579BEE /* View1Presenter.swift */,
+				3738E27424191C4C00579BEE /* View1Worker.swift */,
+				3738E27524191C4C00579BEE /* View1ViewController.swift */,
+				3738E27624191C4C00579BEE /* View1Interactor.swift */,
+				3738E27724191C4C00579BEE /* View1ViewModel.swift */,
+			);
+			path = View1;
+			sourceTree = "<group>";
+		};
+		3738E27F24191C5700579BEE /* View2 */ = {
+			isa = PBXGroup;
+			children = (
+				3738E28024191C6700579BEE /* View2Coordinator.swift */,
+				3738E28124191C6700579BEE /* View2Module.swift */,
+				3738E28224191C6700579BEE /* View2Presenter.swift */,
+				3738E28324191C6700579BEE /* View2Worker.swift */,
+				3738E28424191C6700579BEE /* View2ViewController.swift */,
+				3738E28524191C6700579BEE /* View2Interactor.swift */,
+				3738E28624191C6700579BEE /* View2ViewModel.swift */,
+			);
+			path = View2;
+			sourceTree = "<group>";
+		};
 		374858752270910C00302C34 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +213,8 @@
 		374858802270910C00302C34 /* SLToolboxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3738E27F24191C5700579BEE /* View2 */,
+				3738E26F24191C3100579BEE /* View1 */,
 				37AE891B23E84EED00A6499F /* Coordinator */,
 				37E8274E231FE372002096EE /* Try */,
 				374858812270910C00302C34 /* AppDelegate.swift */,
@@ -385,6 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3738E28C24191C6700579BEE /* View2Interactor.swift in Sources */,
+				3738E27B24191C4C00579BEE /* View1Worker.swift in Sources */,
 				37E8275B231FE38B002096EE /* TryViewController.swift in Sources */,
 				37E82758231FE38B002096EE /* TryPresenter.swift in Sources */,
 				37E8275A231FE38B002096EE /* TryRouter.swift in Sources */,
@@ -393,9 +453,21 @@
 				37E82759231FE38B002096EE /* TryWorker.swift in Sources */,
 				37AE891E23E84F0400A6499F /* MyCustomCoordinator.swift in Sources */,
 				37E8275D231FE38B002096EE /* TryConfigurator.swift in Sources */,
+				3738E27D24191C4C00579BEE /* View1Interactor.swift in Sources */,
 				374858822270910C00302C34 /* AppDelegate.swift in Sources */,
+				3738E28824191C6700579BEE /* View2Module.swift in Sources */,
+				3738E27824191C4C00579BEE /* View1Coordinator.swift in Sources */,
+				3738E27924191C4C00579BEE /* View1Module.swift in Sources */,
+				3738E27A24191C4C00579BEE /* View1Presenter.swift in Sources */,
+				3738E28A24191C6700579BEE /* View2Worker.swift in Sources */,
 				37E8275C231FE38B002096EE /* TryInteractor.swift in Sources */,
+				3738E28B24191C6700579BEE /* View2ViewController.swift in Sources */,
 				37E82757231FE38B002096EE /* TryActions.swift in Sources */,
+				3738E28924191C6700579BEE /* View2Presenter.swift in Sources */,
+				3738E27C24191C4C00579BEE /* View1ViewController.swift in Sources */,
+				3738E28D24191C6700579BEE /* View2ViewModel.swift in Sources */,
+				3738E28724191C6700579BEE /* View2Coordinator.swift in Sources */,
+				3738E27E24191C4C00579BEE /* View1ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +649,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = SLToolboxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +668,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ARPPQ7YPQB;
 				INFOPLIST_FILE = SLToolboxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

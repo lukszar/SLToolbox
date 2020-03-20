@@ -10,6 +10,10 @@ import UIKit
 import SLToolbox
 
 class SecondViewController: UIViewController {
+    
+    deinit {
+        print("Deinited")
+    }
     static var storyboardIdentifier: String? = "Second"
 //    static var storyboardName = "Main"
 

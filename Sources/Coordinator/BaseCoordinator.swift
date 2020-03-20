@@ -26,6 +26,7 @@ open class BaseCoordinator: NSObject, Coordinator {
     
     
     func end() {
+        removeAll()
         parentCoordinator?.remove(coordinator: self)
     }
 }

@@ -10,10 +10,14 @@ import UIKit
 import SLToolbox
 
 class ViewController: UIViewController {
+    
+    deinit {
+        
+    }
 
     @IBAction func pushButtonAction(_ sender: Any) {
-//        let newVC = BooksViewController.instantiate()
-//        present(newVC, animated: true, completion: nil)
+        
+        present(SecondViewController.instantiate(), animated: true, completion: nil)
     }
 
     override func viewDidLoad() {

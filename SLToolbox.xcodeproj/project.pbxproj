@@ -12,6 +12,8 @@
 		370DE68922203231006158C3 /* SLToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 370DE67B22203231006158C3 /* SLToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371DF5E922E089670041A1AC /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DF5E822E089670041A1AC /* UIView+Add.swift */; };
 		371DF5ED22E0D2390041A1AC /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371DF5EC22E0D2390041A1AC /* Identifier.swift */; };
+		3746480B24256E6E00A23AFB /* ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746480A24256E6E00A23AFB /* ISO8601.swift */; };
+		3746480E242575AB00A23AFB /* ISO8601Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746480D242575AB00A23AFB /* ISO8601Tests.swift */; };
 		3748585F226F3A9100302C34 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748585E226F3A9100302C34 /* NibLoadable.swift */; };
 		37485861226F3FBC00302C34 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */; };
 		37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */; };
@@ -68,6 +70,8 @@
 		370DE68822203231006158C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371DF5E822E089670041A1AC /* UIView+Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
 		371DF5EC22E0D2390041A1AC /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		3746480A24256E6E00A23AFB /* ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601.swift; sourceTree = "<group>"; };
+		3746480D242575AB00A23AFB /* ISO8601Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISO8601Tests.swift; sourceTree = "<group>"; };
 		3748585E226F3A9100302C34 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		37485860226F3FBC00302C34 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		37485862226F5B8E00302C34 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
@@ -163,6 +167,14 @@
 				371DF5EC22E0D2390041A1AC /* Identifier.swift */,
 			);
 			path = Identifier;
+			sourceTree = "<group>";
+		};
+		3746480C2425758500A23AFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3746480D242575AB00A23AFB /* ISO8601Tests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3748587222707DAC00302C34 /* Bundle */ = {
@@ -264,6 +276,7 @@
 		37EE9FA02220340C006F811B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3746480C2425758500A23AFB /* Utils */,
 				37EE9FA8222038B0006F811B /* Extensions */,
 				370DE68622203231006158C3 /* SLToolboxTests.swift */,
 				370DE68822203231006158C3 /* Info.plist */,
@@ -373,6 +386,7 @@
 				374858682270666100302C34 /* Delay.swift */,
 				3748586A2270698D00302C34 /* CallUtil.swift */,
 				37485870227075AE00302C34 /* Defaults.swift */,
+				3746480A24256E6E00A23AFB /* ISO8601.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -506,6 +520,7 @@
 				374858672270577E00302C34 /* Fonts.swift in Sources */,
 				37DE117C2415A9830062E4E4 /* Coordinator.swift in Sources */,
 				37485863226F5B8E00302C34 /* UICollectionView+Reusable.swift in Sources */,
+				3746480B24256E6E00A23AFB /* ISO8601.swift in Sources */,
 				37EE9FB32220492C006F811B /* Date+Components.swift in Sources */,
 				37EE9FC6222060FC006F811B /* Logger.swift in Sources */,
 				37EE9FC322205E80006F811B /* UIImage+Tinted.swift in Sources */,
@@ -528,6 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3746480E242575AB00A23AFB /* ISO8601Tests.swift in Sources */,
 				370DE68722203231006158C3 /* SLToolboxTests.swift in Sources */,
 				37EE9FAA222038DE006F811B /* ComparableTests.swift in Sources */,
 				37EE9FAE2220437A006F811B /* UIColorTests.swift in Sources */,

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Łukasz Szarkowicz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 open class PresentingCoordinator: BaseCoordinator {
     

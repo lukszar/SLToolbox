@@ -16,9 +16,7 @@ class MyCustomCoordinator: NavigationCoordinator {
     
     }
     
-    override init(navigationController: UINavigationController) {
-        
-        
-    }
+
+    
     
 }

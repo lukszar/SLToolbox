@@ -10,6 +10,10 @@ import UIKit
 
 open class NavigationCoordinator: BaseCoordinator, UINavigationControllerDelegate {
 
+    deinit {
+        print("\(self) has been deinited")
+    }
+    
     public var navigationController: UINavigationController
 
     override public convenience init() {
