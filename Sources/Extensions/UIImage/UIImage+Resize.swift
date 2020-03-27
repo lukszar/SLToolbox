@@ -36,4 +36,28 @@ public extension UIImage {
 
         return result
     }
+    
+    func resized(to targetSize: CGSize) -> UIImage? {
+
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+
+        // Find smaller ratio to use in resizing
+        // Output image's width and height won't be bigger that provided in target size
+        let useRatio = widthRatio < heightRatio ? widthRatio : heightRatio
+        
+        // Create cropping size
+        var newSize = CGSize(width: size.width * useRatio, height: size.height * useRatio)
+        
+        // Create rect with new size
+        let rect = CGRect(origin: CGPoint.zero, size: newSize)
+
+        // Make image resizing
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        self.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return newImage
+    }
 }
