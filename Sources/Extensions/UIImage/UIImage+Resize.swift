@@ -37,6 +37,15 @@ public extension UIImage {
         return result
     }
     
+    /**
+    Resize UIImage to given target size.
+
+    - parameter targetSize: It is max size output image will have.
+
+    - returns: Resized UIImage.
+
+    - Author: SLToolbox - Łukasz Szarkowicz
+    */
     func resized(to targetSize: CGSize) -> UIImage? {
 
         let widthRatio  = targetSize.width  / size.width
