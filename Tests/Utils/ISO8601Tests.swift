@@ -113,7 +113,6 @@ class ISO8601Tests: XCTestCase {
         XCTAssertEqual(hour, component.hour, "Wrong hour - \(hour) - should be \(component.hour) ")
         XCTAssertEqual(minute, component.minute, "Wrong minute - \(minute) - should be \(component.minute) ")
         XCTAssertEqual(seconds, component.seconds, "Wrong seconds - \(seconds) - should be \(component.seconds) ")
-//        XCTAssertEqual(nanoseconds, component.nanoseconds, "Wrong nanoseconds - \(nanoseconds) - should be \(component.nanoseconds) ")
     }
     
 //    func component(for date: Date) {
