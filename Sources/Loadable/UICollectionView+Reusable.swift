@@ -9,46 +9,6 @@
 import UIKit
 
 public extension UICollectionView {
-    
-    /// Keys used to save associated objects for UICollectionView.
-    private enum AssociatedKeys {
-        static var registeredCells: UInt8 = 0
-        static var registeredSupplementaryViews: UInt8 = 1
-    }
-
-    /// Set of ReuseIdentifiers for registered cells in the collection view.
-    private var registeredCells: Set<String> {
-        get {
-            return getAssociatedObject(for: &AssociatedKeys.registeredCells, defaultValue: Set<String>())
-        }
-        set {
-            setAssociatedObject(for: &AssociatedKeys.registeredCells, value: newValue)
-        }
-    }
-
-    /// It registers a cell in the collection view if the cell is NOT registered yet
-    private func registerIfNeeded<T: UICollectionViewCell>(_ cell: T.Type) {
-        if registeredCells.contains(cell.reuseIdentifier) == false {
-            register(cell)
-        }
-    }
-
-    /// Set of ReuseIdentifiers for registered header and footer views in the table view.
-    private var registeredSupplementaryViews: Set<String> {
-        get {
-            return getAssociatedObject(for: &AssociatedKeys.registeredSupplementaryViews, defaultValue: Set<String>())
-        }
-
-        set {
-            setAssociatedObject(for: &AssociatedKeys.registeredSupplementaryViews, value: newValue) }
-    }
-
-    /// It registers a header or footer view in the table view if the view is NOT registered yet
-    private func registerReusableSupplementaryViewIfNeeded<T: UICollectionReusableView>(_ view: T.Type) {
-        if registeredSupplementaryViews.contains(T.reuseIdentifier) == false {
-            register(T.self, for: T.reuseIdentifier)
-        }
-    }
 
     // MARK: - Cell
 
@@ -89,8 +49,6 @@ public extension UICollectionView {
      - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionViewCell>(_ cell: T.Type) where T: Reusable {
-        
-        registeredCells.insert(T.reuseIdentifier)
         if let nib = cell.nib {
             register(nib, forCellWithReuseIdentifier: cell.reuseIdentifier)
         } else {
@@ -118,8 +76,6 @@ public extension UICollectionView {
          with cell: T.Type = T.self,
          configure: ((T) -> Void) = { _ in }) -> T where T: Reusable {
 
-        registerIfNeeded(T.self)
-        
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: cell.reuseIdentifier, for: indexPath) as? T else {
             let msg = """
             Failed to deque a cell view with reuse identifier: \(T.self.reuseIdentifier) and matching type: \(T.self.self)
@@ -173,8 +129,6 @@ public extension UICollectionView {
      - Author: SLToolbox - Łukasz Szarkowicz
      */
     final func register<T: UICollectionReusableView>(_ supplementaryView: T.Type, for kind: String) where T: Reusable {
-        
-        registeredSupplementaryViews.insert(T.reuseIdentifier)
 
         if let nib = supplementaryView.nib {
             register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: supplementaryView.reuseIdentifier)
@@ -203,8 +157,7 @@ public extension UICollectionView {
          of kind: String,
          configure: ((T) -> Void) = { _ in }) -> T where T: Reusable {
 
-        registerReusableSupplementaryViewIfNeeded(T.self)
-        
+
         guard let view = self.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: view.reuseIdentifier, for: indexPath) as? T else {
 
             let msg = """
